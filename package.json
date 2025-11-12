@@ -6,22 +6,25 @@
   "scripts": {
     "dev": "ng serve",
     "build": "ng build",
-    "preview": "ng serve --configuration=production"
+    "preview": "ng serve --configuration=production",
+    "predeploy": "ng build --configuration=production --output-path dist",
+    "deploy": "gh-pages -d dist/browser/"
   },
   "dependencies": {
-    "rxjs": "^7.8.2",
-    "@angular/platform-browser": "^20.3.0",
-    "@angular/compiler": "^20.3.0",
-    "@angular/core": "^20.3.0",
-    "@angular/router": "^20.3.10",
     "@angular/build": "^20.3.0",
     "@angular/cli": "^20.3.0",
     "@angular/common": "^20.3.0",
+    "@angular/compiler": "^20.3.0",
     "@angular/compiler-cli": "^20.3.0",
+    "@angular/core": "^20.3.0",
+    "@angular/platform-browser": "^20.3.0",
+    "@angular/router": "^20.3.10",
+    "rxjs": "^7.8.2",
     "tailwindcss": "latest"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
+    "gh-pages": "^6.3.0",
     "typescript": "~5.8.2",
     "vite": "^6.2.0"
   }
