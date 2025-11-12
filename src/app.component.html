@@ -1,0 +1,129 @@
+<!-- Main container -->
+<div class="relative min-h-screen bg-gray-50 text-gray-800">
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm shadow-md transition-all duration-300">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <!-- Logo -->
+      <a (click)="scrollTo('home')" class="cursor-pointer flex items-center gap-2">
+        <svg class="w-8 h-8 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+        </svg>
+        <span class="text-xl font-bold text-gray-900">Formación Vital</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex space-x-8 items-center">
+        <a (click)="scrollTo('courses')" class="text-gray-600 hover:text-blue-600 font-medium transition-colors cursor-pointer">Cursos</a>
+        <a (click)="scrollTo('about')" class="text-gray-600 hover:text-blue-600 font-medium transition-colors cursor-pointer">Cómo Trabajamos</a>
+        <a (click)="scrollTo('contact')" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors cursor-pointer shadow-sm">Contacto</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button (click)="toggleMobileMenu()" class="md:hidden text-gray-700 hover:text-blue-600 focus:outline-none">
+        @if (!isMobileMenuOpen()) {
+          <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        } @else {
+          <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        }
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Menu -->
+  <div class="md:hidden fixed top-0 left-0 w-full h-full bg-black/50 z-40 transition-opacity duration-300" [class.opacity-100]="isMobileMenuOpen()" [class.opacity-0]="!isMobileMenuOpen()" [class.pointer-events-auto]="isMobileMenuOpen()" [class.pointer-events-none]="!isMobileMenuOpen()" (click)="toggleMobileMenu()"></div>
+  <nav class="md:hidden fixed top-0 right-0 h-full w-64 bg-white shadow-lg z-50 transform transition-transform duration-300 ease-in-out" [class.translate-x-0]="isMobileMenuOpen()" [class.translate-x-full]="!isMobileMenuOpen()">
+    <div class="p-8 flex flex-col space-y-6 pt-24">
+       <a (click)="scrollTo('courses')" class="text-gray-700 hover:text-blue-600 text-lg font-medium cursor-pointer">Cursos</a>
+       <a (click)="scrollTo('about')" class="text-gray-700 hover:text-blue-600 text-lg font-medium cursor-pointer">Cómo Trabajamos</a>
+       <a (click)="scrollTo('contact')" class="text-gray-700 hover:text-blue-600 text-lg font-medium cursor-pointer">Contacto</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center bg-white pt-20">
+      <div class="container mx-auto px-6 text-center">
+        <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-4">
+          Cursos de Primeros Auxilios que <span class="text-blue-600">Salvan Vidas</span>
+        </h1>
+        <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+          Capacitación profesional en RCP, DEA y Soporte Vital Básico. Prepárese para actuar con confianza en cualquier emergencia.
+        </p>
+        <a (click)="scrollTo('courses')" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition-transform hover:scale-105 shadow-lg cursor-pointer">
+          Ver Cursos
+        </a>
+      </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Nuestra Oferta Formativa</h2>
+          <p class="text-lg text-gray-600 mt-2">Cursos diseñados para todos los niveles, desde principiantes hasta profesionales.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          @for (course of courses(); track course.name) {
+            <div class="bg-white rounded-lg shadow-md p-8 text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+              <div class="flex justify-center mb-4" [innerHTML]="course.icon"></div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">{{ course.name }}</h3>
+              <p class="text-gray-600">{{ course.description }}</p>
+            </div>
+          }
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section ("How We Work") -->
+    <section id="about" class="py-20 bg-white">
+      <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+        <div class="md:w-1/2">
+          <img src="https://picsum.photos/seed/firstaid/600/400" alt="Training session in progress" class="rounded-lg shadow-2xl">
+        </div>
+        <div class="md:w-1/2">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Cómo Trabajamos</h2>
+          <p class="text-gray-600 mb-6 leading-relaxed">
+            Nuestra metodología se basa en la práctica y la simulación de escenarios reales. Creemos que la mejor manera de aprender es haciendo. Por eso, nuestros cursos son dinámicos, participativos y están enfocados en desarrollar la confianza y las habilidades necesarias para actuar eficazmente en una emergencia.
+          </p>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span class="text-gray-700">Instructores certificados con amplia experiencia.</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span class="text-gray-700">Grupos reducidos para una atención personalizada.</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span class="text-gray-700">Material de práctica de última generación.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900">¿Listo para Empezar?</h2>
+            <p class="text-lg text-gray-600 mt-2 mb-8 max-w-2xl mx-auto">Contáctenos hoy para inscribirse en un curso o para organizar una capacitación para su empresa.</p>
+            <a href="mailto:info@formacionvital.com" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition-transform hover:scale-105 shadow-lg cursor-pointer">
+                Enviar un Email
+            </a>
+        </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto px-6 text-center">
+      <p>&copy; {{ currentYear }} Formación Vital. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</div>
