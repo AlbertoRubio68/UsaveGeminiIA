@@ -4,17 +4,37 @@
   <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm shadow-md transition-all duration-300">
     <div class="container mx-auto px-6 py-4 flex justify-between items-center">
       <!-- Logo -->
-      <a (click)="scrollTo('home')" class="cursor-pointer flex items-center gap-2">
+      <a (click)="navigateToHomeAndScroll('home')" class="cursor-pointer flex items-center gap-2">
         <img [src]="logoUrl" alt="uSave Formació Logo" class="w-8 h-8">
-        <span class="text-xl font-bold text-gray-900">uSave Formació</span>
+        <span class="text-xl font-bold text-gray-900">{{ t().HEADER.TITLE }}</span>
       </a>
 
       <!-- Desktop Navigation -->
       <nav class="hidden md:flex space-x-8 items-center">
-        <a (click)="scrollTo('courses')" class="text-gray-600 hover:text-red-600 font-medium transition-colors cursor-pointer">Cursos</a>
-        <a (click)="scrollTo('about')" class="text-gray-600 hover:text-red-600 font-medium transition-colors cursor-pointer">Com Treballem</a>
-        <a (click)="scrollTo('faq')" class="text-gray-600 hover:text-red-600 font-medium transition-colors cursor-pointer">FAQs</a>
-        <a (click)="scrollTo('contact')" class="bg-red-600 text-white px-4 py-2 rounded-full hover:bg-red-700 transition-colors cursor-pointer shadow-sm">Contacte</a>
+        <!-- Courses Dropdown -->
+        <div class="relative pb-2" (mouseenter)="isCoursesMenuOpen.set(true)" (mouseleave)="isCoursesMenuOpen.set(false)">
+          <button class="text-gray-600 hover:text-red-600 font-medium transition-colors cursor-pointer flex items-center gap-1">
+            {{ t().HEADER.NAV.COURSES }}
+            <svg class="w-4 h-4 transition-transform" [class.rotate-180]="isCoursesMenuOpen()" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
+          </button>
+          <div 
+            class="absolute top-full left-1/2 -translate-x-1/2 w-72 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 py-2 transition-opacity duration-200 ease-in-out"
+            [class.opacity-0]="!isCoursesMenuOpen()"
+            [class.invisible]="!isCoursesMenuOpen()">
+            @for (course of t().COURSES.LIST; track course.id) {
+              <a [routerLink]="['/course', course.id]" (click)="isCoursesMenuOpen.set(false)" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-600">{{ course.TITLE }}</a>
+            }
+          </div>
+        </div>
+        <a (click)="navigateToHomeAndScroll('about')" class="text-gray-600 hover:text-red-600 font-medium transition-colors cursor-pointer">{{ t().HEADER.NAV.ABOUT }}</a>
+        <a (click)="navigateToHomeAndScroll('team')" class="text-gray-600 hover:text-red-600 font-medium transition-colors cursor-pointer">{{ t().HEADER.NAV.TEAM }}</a>
+        <a (click)="navigateToHomeAndScroll('faq')" class="text-gray-600 hover:text-red-600 font-medium transition-colors cursor-pointer">{{ t().HEADER.NAV.FAQ }}</a>
+        <div class="flex items-center gap-4">
+          <button (click)="useLanguage('ca')" class="font-semibold" [class.text-red-600]="language() === 'ca'" [class.text-gray-500]="language() !== 'ca'">CA</button>
+          <span class="text-gray-300">|</span>
+          <button (click)="useLanguage('es')" class="font-semibold" [class.text-red-600]="language() === 'es'" [class.text-gray-500]="language() !== 'es'">ES</button>
+        </div>
+        <a (click)="navigateToHomeAndScroll('contact')" class="bg-red-600 text-white px-4 py-2 rounded-full hover:bg-red-700 transition-colors cursor-pointer shadow-sm">{{ t().HEADER.NAV.CONTACT }}</a>
       </nav>
 
       <!-- Mobile Menu Button -->
@@ -35,156 +55,44 @@
   <!-- Mobile Navigation Menu -->
   <div class="md:hidden fixed top-0 left-0 w-full h-full bg-black/50 z-40 transition-opacity duration-300" [class.opacity-100]="isMobileMenuOpen()" [class.opacity-0]="!isMobileMenuOpen()" [class.pointer-events-auto]="isMobileMenuOpen()" [class.pointer-events-none]="!isMobileMenuOpen()" (click)="toggleMobileMenu()"></div>
   <nav class="md:hidden fixed top-0 right-0 h-full w-64 bg-white shadow-lg z-50 transform transition-transform duration-300 ease-in-out" [class.translate-x-0]="isMobileMenuOpen()" [class.translate-x-full]="!isMobileMenuOpen()">
-    <div class="p-8 flex flex-col space-y-6 pt-24">
-       <a (click)="scrollTo('courses')" class="text-gray-700 hover:text-red-600 text-lg font-medium cursor-pointer">Cursos</a>
-       <a (click)="scrollTo('about')" class="text-gray-700 hover:text-red-600 text-lg font-medium cursor-pointer">Com Treballem</a>
-       <a (click)="scrollTo('faq')" class="text-gray-700 hover:text-red-600 text-lg font-medium cursor-pointer">FAQs</a>
-       <a (click)="scrollTo('contact')" class="text-gray-700 hover:text-red-600 text-lg font-medium cursor-pointer">Contacte</a>
+    <div class="p-8 flex flex-col space-y-2 pt-24">
+       <!-- Mobile Courses Dropdown -->
+       <div>
+         <button (click)="toggleCoursesMenu()" class="w-full text-left text-gray-700 hover:text-red-600 text-lg font-medium cursor-pointer flex justify-between items-center">
+            <span>{{ t().HEADER.NAV.COURSES }}</span>
+            <svg class="w-5 h-5 transition-transform" [class.rotate-180]="isCoursesMenuOpen()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>
+         </button>
+         @if(isCoursesMenuOpen()) {
+            <div class="pl-4 mt-2 space-y-2 border-l-2 border-gray-200">
+               @for (course of t().COURSES.LIST; track course.id) {
+                <a [routerLink]="['/course', course.id]" (click)="closeMenus()" class="block text-gray-600 hover:text-red-600 text-base font-medium cursor-pointer">{{ course.TITLE }}</a>
+               }
+            </div>
+         }
+       </div>
+       <a (click)="navigateToHomeAndScroll('about')" class="text-gray-700 hover:text-red-600 text-lg font-medium cursor-pointer py-2">{{ t().HEADER.NAV.ABOUT }}</a>
+       <a (click)="navigateToHomeAndScroll('team')" class="text-gray-700 hover:text-red-600 text-lg font-medium cursor-pointer py-2">{{ t().HEADER.NAV.TEAM }}</a>
+       <a (click)="navigateToHomeAndScroll('faq')" class="text-gray-700 hover:text-red-600 text-lg font-medium cursor-pointer py-2">{{ t().HEADER.NAV.FAQ }}</a>
+       <a (click)="navigateToHomeAndScroll('contact')" class="text-gray-700 hover:text-red-600 text-lg font-medium cursor-pointer py-2">{{ t().HEADER.NAV.CONTACT }}</a>
+       <div class="pt-8 border-t">
+        <div class="flex items-center justify-center gap-4">
+            <button (click)="useLanguage('ca')" class="font-semibold text-lg" [class.text-red-600]="language() === 'ca'" [class.text-gray-500]="language() !== 'ca'">Català</button>
+            <span class="text-gray-300">|</span>
+            <button (click)="useLanguage('es')" class="font-semibold text-lg" [class.text-red-600]="language() === 'es'" [class.text-gray-500]="language() !== 'es'">Español</button>
+        </div>
+       </div>
     </div>
   </nav>
 
   <!-- Main Content -->
   <main>
-    <!-- Hero Section -->
-    <section id="home" class="min-h-screen flex items-center bg-white pt-20">
-      <div class="container mx-auto px-6 text-center">
-        <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-4">
-          Formació Oficial en SVB i ús del DEA amb <span class="text-red-600">Certificació ERC</span>
-        </h1>
-        <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-          Compromesos amb la divulgació i l'ensenyament del Suport Vital Bàsic (SVB) per apropar la formació en primers auxilis a tota la ciutadania.
-        </p>
-        <a (click)="scrollTo('courses')" class="inline-block bg-red-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-red-700 transition-transform hover:scale-105 shadow-lg cursor-pointer">
-          Veure Cursos
-        </a>
-      </div>
-    </section>
-
-    <!-- Courses Section -->
-    <section id="courses" class="py-20 bg-gray-50">
-      <div class="container mx-auto px-6">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-900">La Nostra Oferta Formativa</h2>
-          <p class="text-lg text-gray-600 mt-2">Cursos 100% pràctics i presencials, dinàmics i adaptats a cada entitat o centre.</p>
-        </div>
-        
-        <!-- Main Course -->
-        @if (svbDeaCourse(); as course) {
-          <div class="bg-white rounded-lg shadow-xl p-8 mb-12 flex flex-col md:flex-row gap-8 items-center border-l-4 border-red-600">
-            <div class="flex-shrink-0 text-center md:text-left">
-               <div [innerHTML]="course.icon"></div>
-               <h3 class="text-2xl font-bold text-gray-900 mt-4">{{ course.title }}</h3>
-               <span class="inline-block bg-red-100 text-red-800 text-sm font-semibold mt-2 px-3 py-1 rounded-full">{{ course.certification }}</span>
-            </div>
-            <div>
-              <p class="text-gray-700 mb-4">{{ course.objective }}</p>
-              <h4 class="font-bold text-gray-800 mb-2">Contingut principal:</h4>
-              <ul class="space-y-2 text-gray-600">
-                @for (item of course.content; track item) {
-                  <li class="flex items-start">
-                    <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                    <span>{{ item }}</span>
-                  </li>
-                }
-              </ul>
-              <div class="mt-4 flex flex-wrap gap-4 text-sm">
-                  <span class="font-semibold">Durada:</span><span>{{course.duration}}</span>
-                  <span class="font-semibold">Validesa:</span><span>{{course.validity}}</span>
-              </div>
-            </div>
-          </div>
-        }
-
-        <!-- Other Courses -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          @for (course of otherCourses(); track course.title) {
-            <div class="bg-white rounded-lg shadow-md p-8 text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col">
-              <div class="flex-grow">
-                <div class="flex justify-center mb-4" [innerHTML]="course.icon"></div>
-                <h3 class="text-xl font-bold text-gray-900 mb-2">{{ course.title }}</h3>
-                <p class="text-gray-600">{{ course.description }}</p>
-              </div>
-              <div class="mt-4">
-                <span class="inline-block bg-gray-200 text-gray-800 text-sm font-semibold px-3 py-1 rounded-full">{{ course.duration }}</span>
-              </div>
-            </div>
-          }
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section ("How We Work") -->
-    <section id="about" class="py-20 bg-white">
-      <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
-        <div class="md:w-1/2">
-          <img src="https://picsum.photos/seed/usave/600/400" alt="Training session in progress" class="rounded-lg shadow-2xl">
-        </div>
-        <div class="md:w-1/2">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Com Treballem: Metodologia i Valors</h2>
-          <p class="text-gray-600 mb-6 leading-relaxed">
-            A uSave Formació entenem que aprendre a salvar vides és una responsabilitat, però també una oportunitat de créixer. La nostra metodologia es basa en tres pilars fonamentals: <strong>practicitat, adaptabilitat i rigor</strong>.
-          </p>
-          <ul class="space-y-4">
-            <li class="flex items-start">
-              <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              <span class="text-gray-700"><strong>Certificació oficial ERC:</strong> Cursos acreditats i reconeguts a nivell laboral, sanitari i esportiu.</span>
-            </li>
-            <li class="flex items-start">
-              <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              <span class="text-gray-700"><strong>Equip humà compromès:</strong> Instructors amb experiència real i vocació docent.</span>
-            </li>
-            <li class="flex items-start">
-              <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              <span class="text-gray-700"><strong>Formació a mida:</strong> Simulacions contextualitzades i adaptades al vostre entorn.</span>
-            </li>
-             <li class="flex items-start">
-              <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              <span class="text-gray-700"><strong>Flexibilitat i proximitat:</strong> Ens adaptem a horaris, grups i espais amb un tracte directe.</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    
-    <!-- FAQ Section -->
-    <section id="faq" class="py-20 bg-gray-50">
-      <div class="container mx-auto px-6">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Preguntes Freqüents (FAQs)</h2>
-          <p class="text-lg text-gray-600 mt-2">Resolent els teus dubtes més comuns.</p>
-        </div>
-        <div class="max-w-4xl mx-auto space-y-6">
-          @for (faq of faqs(); track $index) {
-            <div class="bg-white rounded-lg shadow-md p-6 transition-shadow duration-300 hover:shadow-lg">
-              <h3 class="text-xl font-bold text-gray-900 mb-2">{{ faq.question }}</h3>
-              <p class="text-gray-600 leading-relaxed">{{ faq.answer }}</p>
-            </div>
-          }
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-white">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Contacte i Properes Passes</h2>
-            <p class="text-lg text-gray-600 mt-2 mb-8 max-w-2xl mx-auto">Si la vostra entitat té interès en oferir formació, estem a la vostra disposició. Contacteu-nos per a una proposta personalitzada.</p>
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
-                <a href="mailto:formacio.usave@gmail.com" class="inline-block bg-red-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-red-700 transition-transform hover:scale-105 shadow-lg cursor-pointer">
-                    Enviar un Email
-                </a>
-                <a href="tel:616131411" class="text-lg font-semibold text-gray-700 hover:text-red-600">
-                    o truca'ns al 616 131 411
-                </a>
-            </div>
-        </div>
-    </section>
+    <router-outlet></router-outlet>
   </main>
 
   <!-- Footer -->
   <footer class="bg-gray-800 text-white py-6">
     <div class="container mx-auto px-6 text-center">
-      <p>&copy; {{ currentYear }} uSave Formació. Tots els drets reservats.</p>
+      <p>&copy; {{ currentYear }} uSave Formació. {{ t().FOOTER.COPYRIGHT }}</p>
     </div>
   </footer>
 </div>

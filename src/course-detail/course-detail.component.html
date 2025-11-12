@@ -1,0 +1,65 @@
+@if (course(); as courseData) {
+<div class="bg-white pt-24 pb-16">
+  <div class="container mx-auto px-6">
+    <div class="max-w-4xl mx-auto">
+      <!-- Course Header -->
+      <div class="text-center mb-12">
+        <div class="inline-block p-4 bg-red-100 rounded-full mb-4" [innerHTML]="courseData.ICON"></div>
+        <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">{{ courseData.TITLE }}</h1>
+        @if (courseData.CERTIFICATION) {
+            <span class="inline-block bg-red-100 text-red-800 text-md font-semibold mt-4 px-4 py-1.5 rounded-full">{{ courseData.CERTIFICATION }}</span>
+        }
+      </div>
+
+      <!-- Course Body -->
+      <div class="bg-gray-50 rounded-lg shadow-lg p-8">
+        <p class="text-lg text-gray-700 mb-8 leading-relaxed">{{ courseData.OBJECTIVE || courseData.DESCRIPTION }}</p>
+
+        <h2 class="text-2xl font-bold text-gray-800 mb-4 border-l-4 border-red-500 pl-4">{{ courseData.CONTENT_TITLE }}</h2>
+        <ul class="space-y-3 text-gray-600 mb-8">
+          @for (item of courseData.CONTENT_LIST; track item) {
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+              <span>{{ item }}</span>
+            </li>
+          }
+        </ul>
+
+        <div class="mt-6 border-t pt-6 flex flex-wrap gap-x-8 gap-y-4 text-md">
+            @if (courseData.DURATION_LABEL) {
+                <div>
+                    <span class="font-bold text-gray-800">{{ courseData.DURATION_LABEL }}:</span>
+                    <span class="text-gray-600 ml-2">{{ courseData.DURATION_VALUE }}</span>
+                </div>
+            } @else {
+                 <div>
+                    <span class="font-bold text-gray-800">{{ durationLabel() }}:</span>
+                    <span class="text-gray-600 ml-2">{{ courseData.DURATION }}</span>
+                </div>
+            }
+
+            @if(courseData.VALIDITY_LABEL) {
+                 <div>
+                    <span class="font-bold text-gray-800">{{ courseData.VALIDITY_LABEL }}:</span>
+                    <span class="text-gray-600 ml-2">{{ courseData.VALIDITY_VALUE }}</span>
+                </div>
+            }
+        </div>
+      </div>
+
+      <!-- CTA -->
+       <div class="mt-12 text-center">
+            <h3 class="text-2xl font-bold text-gray-900">{{ t().CONTACT.TITLE }}</h3>
+            <p class="text-lg text-gray-600 mt-2 mb-8 max-w-2xl mx-auto">{{ t().CONTACT.SUBTITLE }}</p>
+            <a (click)="navigateToHomeAndScroll('contact')" class="inline-block bg-red-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-red-700 transition-transform hover:scale-105 shadow-lg cursor-pointer">
+                {{ t().HEADER.NAV.CONTACT }}
+            </a>
+        </div>
+    </div>
+  </div>
+</div>
+} @else {
+    <div class="h-screen flex items-center justify-center">
+        <p class="text-xl text-gray-600">Carregant curs...</p>
+    </div>
+}
