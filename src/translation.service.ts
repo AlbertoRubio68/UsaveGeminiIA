@@ -150,7 +150,7 @@ const allTranslations = {
         "TITLE": "Contacte i Properes Passes",
         "SUBTITLE": "Si la vostra entitat té interès en oferir formació, estem a la vostra disposició. Contacteu-nos per a una proposta personalitzada.",
         "EMAIL_BUTTON": "Enviar un Email",
-        "PHONE_TEXT": "o truca'ns al 616 131 411"
+        "PHONE_TEXT": ""
     },
     "FOOTER": {
         "COPYRIGHT": "Tots els drets reservats."
@@ -305,7 +305,7 @@ const allTranslations = {
         "TITLE": "Contacto y Próximos Pasos",
         "SUBTITLE": "Si vuestra entidad tiene interés en ofrecer formación, estamos a vuestra disposición. Contactadnos para una propuesta personalizada.",
         "EMAIL_BUTTON": "Enviar un Email",
-        "PHONE_TEXT": "o llámanos al 616 131 411"
+        "PHONE_TEXT": ""
     },
     "FOOTER": {
         "COPYRIGHT": "Todos los derechos reservados."
