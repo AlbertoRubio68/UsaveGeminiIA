@@ -109,10 +109,10 @@ const allTranslations = {
                 "DESCRIPTION": "Amb anys d'experiència en serveis d'urgències hospitalàries, en Xavier aporta una perspectiva pràctica i realista a cada curs. La seva passió és ensenyar a actuar amb calma i eficàcia en moments crítics."
             },
             {
-                "NAME": "Marc",
+                "NAME": "Marc Engli Ferret",
                 "ROLE": "Infermer i Instructor ERC",
                 "IMAGE_URL": "assets/images/Marc.jpg",
-                "DESCRIPTION": "Especialitzat en emergències extrahospitalàries, en Marc té una gran vocació per la docència. El seu objectiu és que cada alumne se senti segur i preparat per aplicar els coneixements apresos."
+                "DESCRIPTION": "Amb experiéncia en pacient crític i urgències, en Marc té una gran vocació per la docència. El seu objectiu és que cada alumne se senti segur i preparat per aplicar els coneixements apresos."
             }
         ]
     },
@@ -264,10 +264,10 @@ const allTranslations = {
                 "DESCRIPTION": "Con años de experiencia en servicios de urgencias hospitalarias, Xavier aporta una perspectiva práctica y realista a cada curso. Su pasión es enseñar a actuar con calma y eficacia en momentos críticos."
             },
             {
-                "NAME": "Marc",
+                "NAME": "Marc Engli Ferret",
                 "ROLE": "Enfermero e Instructor ERC",
                 "IMAGE_URL": "assets/images/Marc.jpg",
-                "DESCRIPTION": "Especializado en emergencias extrahospitalarias, Marc tiene una gran vocación por la docencia. Su objetivo es que cada alumno se sienta seguro y preparado para aplicar los conocimientos aprendidos."
+                "DESCRIPTION": "Con experiencia en paciente crítico y urgencias, Marc tiene una gran vocación por la docencia. Su objetivo es que cada alumno se sienta seguro y preparado para aplicar los conocimientos aprendidos."
             }
         ]
     },
