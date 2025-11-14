@@ -33,6 +33,16 @@
                 "glob": "CNAME",
                 "input": "./",
                 "output": "."
+              },
+              {
+                "glob": "robots.txt",
+                "input": "./",
+                "output": "."
+              },
+              {
+                "glob": "sitemap.xml",
+                "input": "./",
+                "output": "."
               }
             ]
           },
