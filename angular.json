@@ -28,6 +28,11 @@
                 "glob": "favicon.ico",
                 "input": "src",
                 "output": "."
+              },
+              {
+                "glob": "CNAME",
+                "input": "./",
+                "output": "."
               }
             ]
           },
@@ -57,6 +62,9 @@
             }
           },
           "defaultConfiguration": "development"
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
