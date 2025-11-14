@@ -38,6 +38,7 @@ const allTranslations = {
                     "Simulacions adaptades a cada context (esportiu, escolar, públic...)"
                 ],
                 "DURATION_LABEL": "Durada",
+                "DURATION": "6 horas",
                 "DURATION_VALUE": "6 hores presencials",
                 "VALIDITY_LABEL": "Validesa",
                 "VALIDITY_VALUE": "2 anys"
@@ -106,7 +107,7 @@ const allTranslations = {
                 "NAME": "Xavier Gomez Girbau",
                 "ROLE": "Infermer i Instructor ERC",
                 "IMAGE_URL": "assets/images/Xavi.jpg",
-                "DESCRIPTION": "Amb anys d'experiència en serveis d'urgències hospitalàries, en Xavier aporta una perspectiva pràctica i realista a cada curs. La seva passió és ensenyar a actuar amb calma i eficàcia en moments crítics."
+                "DESCRIPTION": "Amb anys d'experiència en serveis d'urgències hospitalàries i urgencies i emergencies extrahospitalaries, en Xavier aporta una perspectiva pràctica i realista a cada curs. La seva passió és ensenyar a actuar amb calma i eficàcia en moments crítics."
             },
             {
                 "NAME": "Marc Engli Ferret",
@@ -193,6 +194,7 @@ const allTranslations = {
                     "Simulaciones adaptadas a cada contexto (deportivo, escolar, público...)"
                 ],
                 "DURATION_LABEL": "Duración",
+                "DURATION": "6 horas",
                 "DURATION_VALUE": "6 horas presenciales",
                 "VALIDITY_LABEL": "Validez",
                 "VALIDITY_VALUE": "2 años"
@@ -261,7 +263,7 @@ const allTranslations = {
                 "NAME": "Xavier Gomez Girbau",
                 "ROLE": "Enfermero e Instructor ERC",
                 "IMAGE_URL": "assets/images/Xavi.jpg",
-                "DESCRIPTION": "Con años de experiencia en servicios de urgencias hospitalarias, Xavier aporta una perspectiva práctica y realista a cada curso. Su pasión es enseñar a actuar con calma y eficacia en momentos críticos."
+                "DESCRIPTION": "Con años de experiencia en servicios de urgencias hospitalarias y urgencias y emergencias extrahospitalarias, Xavier aporta una perspectiva práctica y realista a cada curso. Su pasión es enseñar a actuar con calma y eficacia en momentos críticos."
             },
             {
                 "NAME": "Marc Engli Ferret",
