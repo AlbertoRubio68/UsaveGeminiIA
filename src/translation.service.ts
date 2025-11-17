@@ -42,6 +42,26 @@ const allTranslations = {
                 "DURATION_VALUE": "6 hores presencials",
                 "VALIDITY_LABEL": "Validesa",
                 "VALIDITY_VALUE": "2 anys"
+            },            {
+                "id": "svb-dea-nooficial",
+                "ICON": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-12 w-12 mx-auto text-red-600\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"1.5\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z\" /></svg>",
+                "TITLE": "Curs no Oficial de Suport Vital Bàsic i DEA",
+                "OBJECTIVE": "Dotar els participants de les habilitats necessàries per reconèixer una aturada cardiorespiratòria i actuar amb rapidesa mitjançant maniobres de reanimació i l'ús del DEA.",
+                "CONTENT_TITLE": "Contingut principal:",
+                "CONTENT_LIST": [
+                    "Reconeixement de l'aturada cardiorespiratòria",
+                    "RCP (reanimació cardiopulmonar) en adults",
+                    "Ús correcte del DEA",
+                    "Posició lateral de seguretat (PLS)",
+                    "Actuació davant obstrucció de la via aèria",
+                    "Activació de serveis d'emergència",
+                    "Simulacions adaptades a cada context (esportiu, escolar, públic...)"
+                ],
+                "DURATION_LABEL": "Durada",
+                "DURATION": "4 horas",
+                "DURATION_VALUE": "4 hores presencials",
+                "VALIDITY_LABEL": "Validesa",
+                "VALIDITY_VALUE": "2 anys"
             },
             {
                 "id": "reciclatge",
@@ -107,7 +127,7 @@ const allTranslations = {
                 "NAME": "Xavier Gomez Girbau",
                 "ROLE": "Infermer i Instructor ERC",
                 "IMAGE_URL": "assets/images/Xavi.jpg",
-                "DESCRIPTION": "Amb anys d'experiència en serveis d'urgències hospitalàries i urgencies i emergencies extrahospitalaries, en Xavier aporta una perspectiva pràctica i realista a cada curs. La seva passió és ensenyar a actuar amb calma i eficàcia en moments crítics."
+                "DESCRIPTION": "Amb anys d'experiència en serveis d'urgències hospitalàries i emergencies extrahospitalaries, en Xavier aporta una perspectiva pràctica i realista a cada curs. La seva passió és ensenyar a actuar amb calma i eficàcia en moments crítics."
             },
             {
                 "NAME": "Marc Engli Ferret",
@@ -200,6 +220,27 @@ const allTranslations = {
                 "VALIDITY_VALUE": "2 años"
             },
             {
+                "id": "svb-dea-nooficial",
+                "ICON": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-12 w-12 mx-auto text-red-600\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"1.5\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z\" /></svg>",
+                "TITLE": "Curso no Oficial de Soporte Vital Básico y DEA",
+                "OBJECTIVE": "Dotar a los participantes de las habilidades necesarias para reconocer una parada cardiorrespiratoria y actuar con rapidez mediante maniobras de reanimación y el uso del DEA.",
+                "CONTENT_TITLE": "Contenido principal:",
+                "CONTENT_LIST": [
+                    "Reconocimiento de la parada cardiorrespiratoria",
+                    "RCP (reanimación cardiopulmonar) en adultos",
+                    "Uso correcto del DEA",
+                    "Posición lateral de seguridad (PLS)",
+                    "Actuación ante obstrucción de la vía aérea",
+                    "Activación de servicios de emergencia",
+                    "Simulaciones adaptadas a cada contexto (deportivo, escolar, público...)"
+                ],
+                "DURATION_LABEL": "Duración",
+                "DURATION": "4 horas",
+                "DURATION_VALUE": "4 horas presenciales",
+                "VALIDITY_LABEL": "Validez",
+                "VALIDITY_VALUE": "2 años"
+            },
+            {
                 "id": "reciclatge",
                 "ICON": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-12 w-12 mx-auto text-red-600\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"1.5\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 11.667 0l3.181-3.183m-4.991-2.691V5.25a3.375 3.375 0 0 0-3.375-3.375H8.25a3.375 3.375 0 0 0-3.375 3.375v2.25\" /></svg>",
                 "TITLE": "Cursos de Reciclaje (Reacreditación)",
@@ -263,7 +304,7 @@ const allTranslations = {
                 "NAME": "Xavier Gomez Girbau",
                 "ROLE": "Enfermero e Instructor ERC",
                 "IMAGE_URL": "assets/images/Xavi.jpg",
-                "DESCRIPTION": "Con años de experiencia en servicios de urgencias hospitalarias y urgencias y emergencias extrahospitalarias, Xavier aporta una perspectiva práctica y realista a cada curso. Su pasión es enseñar a actuar con calma y eficacia en momentos críticos."
+                "DESCRIPTION": "Con años de experiencia en servicios de urgencias hospitalarias y emergencias extrahospitalarias, Xavier aporta una perspectiva práctica y realista a cada curso. Su pasión es enseñar a actuar con calma y eficacia en momentos críticos."
             },
             {
                 "NAME": "Marc Engli Ferret",
