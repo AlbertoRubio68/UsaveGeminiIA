@@ -45,7 +45,7 @@ const allTranslations = {
             },            {
                 "id": "svb-dea-nooficial",
                 "ICON": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-12 w-12 mx-auto text-red-600\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"1.5\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z\" /></svg>",
-                "TITLE": "Curs no Oficial de Suport Vital Bàsic i DEA",
+                "TITLE": "Curs de Primers Auxilis i Suport Vital Bàsic",
                 "OBJECTIVE": "Dotar els participants de les habilitats necessàries per reconèixer una aturada cardiorespiratòria i actuar amb rapidesa mitjançant maniobres de reanimació i l'ús del DEA.",
                 "CONTENT_TITLE": "Contingut principal:",
                 "CONTENT_LIST": [
@@ -60,8 +60,6 @@ const allTranslations = {
                 "DURATION_LABEL": "Durada",
                 "DURATION": "4 horas",
                 "DURATION_VALUE": "4 hores presencials",
-                "VALIDITY_LABEL": "Validesa",
-                "VALIDITY_VALUE": "2 anys"
             },
             {
                 "id": "reciclatge",
@@ -159,7 +157,7 @@ const allTranslations = {
             },
             {
                 "question": "Quin és el mínim i màxim de participants?",
-                "answer": "Els cursos estan dissenyats per grups de fins a 18 persones, tot i que és possible adaptar-los a grups més petits o grans en funció del context."
+                "answer": "Els cursos de primers auxilis i SVB estan dissenyats per grups de fins a 18 persones, tot i que és possible adaptar-los a grups més petits o grans en funció del context."
             },
             {
                 "question": "Es poden programar cursos recurrents o en calendari?",
@@ -222,7 +220,7 @@ const allTranslations = {
             {
                 "id": "svb-dea-nooficial",
                 "ICON": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-12 w-12 mx-auto text-red-600\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"1.5\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z\" /></svg>",
-                "TITLE": "Curso no Oficial de Soporte Vital Básico y DEA",
+                "TITLE": "Curso de Primeros Auxilios y de Soporte Vital Básico",
                 "OBJECTIVE": "Dotar a los participantes de las habilidades necesarias para reconocer una parada cardiorrespiratoria y actuar con rapidez mediante maniobras de reanimación y el uso del DEA.",
                 "CONTENT_TITLE": "Contenido principal:",
                 "CONTENT_LIST": [
@@ -237,8 +235,6 @@ const allTranslations = {
                 "DURATION_LABEL": "Duración",
                 "DURATION": "4 horas",
                 "DURATION_VALUE": "4 horas presenciales",
-                "VALIDITY_LABEL": "Validez",
-                "VALIDITY_VALUE": "2 años"
             },
             {
                 "id": "reciclatge",
@@ -336,7 +332,7 @@ const allTranslations = {
             },
             {
                 "question": "¿Cuál es el mínimo y máximo de participantes?",
-                "answer": "Los cursos están diseñados para grupos de hasta 18 personas, aunque es posible adaptarlos a grupos más pequeños o grandes en función del contexto."
+                "answer": "Los cursos de primeros auxilios y SVB están diseñados para grupos de hasta 18 personas, aunque es posible adaptarlos a grupos más pequeños o grandes en función del contexto."
             },
             {
                 "question": "¿Se pueden programar cursos recurrentes o en calendario?",
