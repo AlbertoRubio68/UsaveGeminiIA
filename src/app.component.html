@@ -12,75 +12,117 @@
       <!-- Desktop Navigation -->
       <nav class="hidden md:flex space-x-8 items-center">
         <!-- Courses Dropdown -->
-        <div class="relative pb-2" (mouseenter)="isCoursesMenuOpen.set(true)" (mouseleave)="isCoursesMenuOpen.set(false)">
-          <button class="text-gray-600 hover:text-red-600 font-medium transition-colors cursor-pointer flex items-center gap-1">
+        <div class="relative pb-2" (mouseenter)="isCoursesMenuOpen.set(true)"
+          (mouseleave)="isCoursesMenuOpen.set(false)">
+          <button
+            class="text-gray-600 hover:text-red-600 font-medium transition-colors cursor-pointer flex items-center gap-1">
             {{ t().HEADER.NAV.COURSES }}
-            <svg class="w-4 h-4 transition-transform" [class.rotate-180]="isCoursesMenuOpen()" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
+            <svg class="w-4 h-4 transition-transform" [class.rotate-180]="isCoursesMenuOpen()"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+            </svg>
           </button>
-          <div 
+          <div
             class="absolute top-full left-1/2 -translate-x-1/2 w-72 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 py-2 transition-opacity duration-200 ease-in-out"
-            [class.opacity-0]="!isCoursesMenuOpen()"
-            [class.invisible]="!isCoursesMenuOpen()">
+            [class.opacity-0]="!isCoursesMenuOpen()" [class.invisible]="!isCoursesMenuOpen()">
             @for (course of t().COURSES.LIST; track course.id) {
-              <a [routerLink]="['/course', course.id]" (click)="isCoursesMenuOpen.set(false)" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-600">{{ course.TITLE }}</a>
+            <a [routerLink]="['/course', course.id]" (click)="isCoursesMenuOpen.set(false)"
+              class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-600">{{ course.TITLE }}</a>
             }
           </div>
         </div>
-        <a (click)="navigateToHomeAndScroll('about')" class="text-gray-600 hover:text-red-600 font-medium transition-colors cursor-pointer">{{ t().HEADER.NAV.ABOUT }}</a>
-        <a (click)="navigateToHomeAndScroll('team')" class="text-gray-600 hover:text-red-600 font-medium transition-colors cursor-pointer">{{ t().HEADER.NAV.TEAM }}</a>
-        <a (click)="navigateToHomeAndScroll('faq')" class="text-gray-600 hover:text-red-600 font-medium transition-colors cursor-pointer">{{ t().HEADER.NAV.FAQ }}</a>
+        <a (click)="navigateToHomeAndScroll('calendar')"
+          class="text-gray-600 hover:text-red-600 font-medium transition-colors cursor-pointer">{{
+          t().HEADER.NAV.CALENDAR }}</a>
+        <a (click)="navigateToHomeAndScroll('about')"
+          class="text-gray-600 hover:text-red-600 font-medium transition-colors cursor-pointer">{{ t().HEADER.NAV.ABOUT
+          }}</a>
+        <a (click)="navigateToHomeAndScroll('team')"
+          class="text-gray-600 hover:text-red-600 font-medium transition-colors cursor-pointer">{{ t().HEADER.NAV.TEAM
+          }}</a>
+        <a (click)="navigateToHomeAndScroll('faq')"
+          class="text-gray-600 hover:text-red-600 font-medium transition-colors cursor-pointer">{{ t().HEADER.NAV.FAQ
+          }}</a>
         <div class="flex items-center gap-4">
-          <button (click)="useLanguage('ca')" class="font-semibold" [class.text-red-600]="language() === 'ca'" [class.text-gray-500]="language() !== 'ca'">CA</button>
+          <button (click)="useLanguage('ca')" class="font-semibold" [class.text-red-600]="language() === 'ca'"
+            [class.text-gray-500]="language() !== 'ca'">CA</button>
           <span class="text-gray-300">|</span>
-          <button (click)="useLanguage('es')" class="font-semibold" [class.text-red-600]="language() === 'es'" [class.text-gray-500]="language() !== 'es'">ES</button>
+          <button (click)="useLanguage('es')" class="font-semibold" [class.text-red-600]="language() === 'es'"
+            [class.text-gray-500]="language() !== 'es'">ES</button>
         </div>
-        <a (click)="navigateToHomeAndScroll('contact')" class="bg-red-600 text-white px-4 py-2 rounded-full hover:bg-red-700 transition-colors cursor-pointer shadow-sm">{{ t().HEADER.NAV.CONTACT }}</a>
+        <a (click)="navigateToHomeAndScroll('contact')"
+          class="bg-red-600 text-white px-4 py-2 rounded-full hover:bg-red-700 transition-colors cursor-pointer shadow-sm">{{
+          t().HEADER.NAV.CONTACT }}</a>
       </nav>
 
       <!-- Mobile Menu Button -->
       <button (click)="toggleMobileMenu()" class="md:hidden text-gray-700 hover:text-red-600 focus:outline-none">
         @if (!isMobileMenuOpen()) {
-          <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-          </svg>
+        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
         } @else {
-          <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-          </svg>
+        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
         }
       </button>
     </div>
   </header>
 
   <!-- Mobile Navigation Menu -->
-  <div class="md:hidden fixed top-0 left-0 w-full h-full bg-black/50 z-40 transition-opacity duration-300" [class.opacity-100]="isMobileMenuOpen()" [class.opacity-0]="!isMobileMenuOpen()" [class.pointer-events-auto]="isMobileMenuOpen()" [class.pointer-events-none]="!isMobileMenuOpen()" (click)="toggleMobileMenu()"></div>
-  <nav class="md:hidden fixed top-0 right-0 h-full w-64 bg-white shadow-lg z-50 transform transition-transform duration-300 ease-in-out" [class.translate-x-0]="isMobileMenuOpen()" [class.translate-x-full]="!isMobileMenuOpen()">
+  <div class="md:hidden fixed top-0 left-0 w-full h-full bg-black/50 z-40 transition-opacity duration-300"
+    [class.opacity-100]="isMobileMenuOpen()" [class.opacity-0]="!isMobileMenuOpen()"
+    [class.pointer-events-auto]="isMobileMenuOpen()" [class.pointer-events-none]="!isMobileMenuOpen()"
+    (click)="toggleMobileMenu()"></div>
+  <nav
+    class="md:hidden fixed top-0 right-0 h-full w-64 bg-white shadow-lg z-50 transform transition-transform duration-300 ease-in-out"
+    [class.translate-x-0]="isMobileMenuOpen()" [class.translate-x-full]="!isMobileMenuOpen()">
     <div class="p-8 flex flex-col space-y-2 pt-24">
-       <!-- Mobile Courses Dropdown -->
-       <div>
-         <button (click)="toggleCoursesMenu()" class="w-full text-left text-gray-700 hover:text-red-600 text-lg font-medium cursor-pointer flex justify-between items-center">
-            <span>{{ t().HEADER.NAV.COURSES }}</span>
-            <svg class="w-5 h-5 transition-transform" [class.rotate-180]="isCoursesMenuOpen()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>
-         </button>
-         @if(isCoursesMenuOpen()) {
-            <div class="pl-4 mt-2 space-y-2 border-l-2 border-gray-200">
-               @for (course of t().COURSES.LIST; track course.id) {
-                <a [routerLink]="['/course', course.id]" (click)="closeMenus()" class="block text-gray-600 hover:text-red-600 text-base font-medium cursor-pointer">{{ course.TITLE }}</a>
-               }
-            </div>
-         }
-       </div>
-       <a (click)="navigateToHomeAndScroll('about')" class="text-gray-700 hover:text-red-600 text-lg font-medium cursor-pointer py-2">{{ t().HEADER.NAV.ABOUT }}</a>
-       <a (click)="navigateToHomeAndScroll('team')" class="text-gray-700 hover:text-red-600 text-lg font-medium cursor-pointer py-2">{{ t().HEADER.NAV.TEAM }}</a>
-       <a (click)="navigateToHomeAndScroll('faq')" class="text-gray-700 hover:text-red-600 text-lg font-medium cursor-pointer py-2">{{ t().HEADER.NAV.FAQ }}</a>
-       <a (click)="navigateToHomeAndScroll('contact')" class="text-gray-700 hover:text-red-600 text-lg font-medium cursor-pointer py-2">{{ t().HEADER.NAV.CONTACT }}</a>
-       <div class="pt-8 border-t">
-        <div class="flex items-center justify-center gap-4">
-            <button (click)="useLanguage('ca')" class="font-semibold text-lg" [class.text-red-600]="language() === 'ca'" [class.text-gray-500]="language() !== 'ca'">Català</button>
-            <span class="text-gray-300">|</span>
-            <button (click)="useLanguage('es')" class="font-semibold text-lg" [class.text-red-600]="language() === 'es'" [class.text-gray-500]="language() !== 'es'">Español</button>
+      <!-- Mobile Courses Dropdown -->
+      <div>
+        <button (click)="toggleCoursesMenu()"
+          class="w-full text-left text-gray-700 hover:text-red-600 text-lg font-medium cursor-pointer flex justify-between items-center">
+          <span>{{ t().HEADER.NAV.COURSES }}</span>
+          <svg class="w-5 h-5 transition-transform" [class.rotate-180]="isCoursesMenuOpen()"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
+        @if(isCoursesMenuOpen()) {
+        <div class="pl-4 mt-2 space-y-2 border-l-2 border-gray-200">
+          @for (course of t().COURSES.LIST; track course.id) {
+          <a [routerLink]="['/course', course.id]" (click)="closeMenus()"
+            class="block text-gray-600 hover:text-red-600 text-base font-medium cursor-pointer">{{ course.TITLE }}</a>
+          }
         </div>
-       </div>
+        }
+      </div>
+      <a (click)="navigateToHomeAndScroll('calendar')"
+        class="text-gray-700 hover:text-red-600 text-lg font-medium cursor-pointer py-2">{{ t().HEADER.NAV.CALENDAR
+        }}</a>
+      <a (click)="navigateToHomeAndScroll('about')"
+        class="text-gray-700 hover:text-red-600 text-lg font-medium cursor-pointer py-2">{{ t().HEADER.NAV.ABOUT }}</a>
+      <a (click)="navigateToHomeAndScroll('team')"
+        class="text-gray-700 hover:text-red-600 text-lg font-medium cursor-pointer py-2">{{ t().HEADER.NAV.TEAM }}</a>
+      <a (click)="navigateToHomeAndScroll('faq')"
+        class="text-gray-700 hover:text-red-600 text-lg font-medium cursor-pointer py-2">{{ t().HEADER.NAV.FAQ }}</a>
+      <a (click)="navigateToHomeAndScroll('contact')"
+        class="text-gray-700 hover:text-red-600 text-lg font-medium cursor-pointer py-2">{{ t().HEADER.NAV.CONTACT
+        }}</a>
+      <div class="pt-8 border-t">
+        <div class="flex items-center justify-center gap-4">
+          <button (click)="useLanguage('ca')" class="font-semibold text-lg" [class.text-red-600]="language() === 'ca'"
+            [class.text-gray-500]="language() !== 'ca'">Català</button>
+          <span class="text-gray-300">|</span>
+          <button (click)="useLanguage('es')" class="font-semibold text-lg" [class.text-red-600]="language() === 'es'"
+            [class.text-gray-500]="language() !== 'es'">Español</button>
+        </div>
+      </div>
     </div>
   </nav>
 
