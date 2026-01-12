@@ -1,0 +1,32 @@
+<section class="py-20 bg-gray-50">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-8">
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900">{{ t().SPACES.TITLE }}</h1>
+      <p class="text-lg text-gray-600 mt-3 max-w-3xl mx-auto">{{ t().SPACES.TEASER }}</p>
+    </div>
+
+    <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <!-- Main content -->
+      <div class="lg:col-span-2 bg-white rounded-lg shadow-md p-8">
+        <div class="prose lg:prose-lg text-gray-700" [innerHTML]="t().SPACES.CONTENT"></div>
+      </div>
+
+      <!-- Sidebar / CTA -->
+      <aside class="bg-white rounded-lg shadow-md p-6 flex flex-col gap-6">
+        <div>
+          <h3 class="text-xl font-semibold text-gray-900">{{ t().SPACES.SIDEBAR.CTA_TITLE }}</h3>
+          <p class="text-gray-600 mt-2">{{ t().SPACES.SIDEBAR.CTA_TEXT }}</p>
+        </div>
+
+        <div class="flex gap-3">
+          <a href="mailto:formacio.usave@gmail.com" class="flex-1 inline-block text-center bg-red-600 text-white px-4 py-2 rounded-md font-semibold hover:bg-red-700">{{ t().SPACES.SIDEBAR.EMAIL_LABEL }}</a>
+        </div>
+
+        <div class="pt-4 border-t">
+          <p class="text-sm text-gray-500">{{ t().SPACES.SIDEBAR.FOOTER_TEXT }}</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+

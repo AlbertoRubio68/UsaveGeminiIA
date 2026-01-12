@@ -9,6 +9,7 @@ const allTranslations = {
                 "CALENDAR": "Calendari",
                 "ABOUT": "Com Treballem",
                 "TEAM": "El Nostre Equip",
+                "SPACES": "Espais Cardioprotegits",
                 "FAQ": "FAQs",
                 "CONTACT": "Contacte"
             }
@@ -112,6 +113,27 @@ const allTranslations = {
                         "Protocol d'activació del sistema d'emergències (SEM)"
                     ]
                 }
+                ,
+                {
+                    "id": "taller-svb",
+                    "ICON": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-12 w-12 mx-auto text-red-600\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"1.5\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z\" /></svg>",
+                    "TITLE": "Taller de Suport Vital Bàsic",
+                    "OBJECTIVE": "Ideal per a: Un primer contacte ràpid i pràctic. En només 90 minuts, aprendràs a identificar una aturada cardiorespiratòria i a actuar sense por. Sessió intensiva centrada en els primers minuts crítics.",
+                    "DURATION_LABEL": "Durada",
+                    "DURATION": "1,5 hores",
+                    "PRICE_LABEL": "Preu",
+                    "PRICE": "19,99€"
+                },
+                {
+                    "id": "primers-a-mida",
+                    "ICON": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-12 w-12 mx-auto text-red-600\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"1.5\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 11.667 0l3.181-3.183m-4.991-2.691V5.25a3.375 3.375 0 0 0-3.375-3.375H8.25a3.375 3.375 0 0 0-3.375 3.375v2.25\" /></svg>",
+                    "TITLE": "Primers Auxilis a Mida",
+                    "DESCRIPTION": "Ideal per a: Centres educatius, esportius o empreses amb necessitats específiques. Dissenyem un programa adaptat al vostre centre.",
+                    "DURATION_LABEL": "Durada",
+                    "DURATION": "A concretar segons programa",
+                    "PRICE_LABEL": "Preu",
+                    "PRICE": "A pactar"
+                },
             ]
         },
         "ABOUT": {
@@ -148,6 +170,19 @@ const allTranslations = {
                     "DESCRIPTION": "Amb anys d'experiència en urgències hospitalàries, l'Albert ofereix un enfocament proper i pràctic, ajudant les persones a actuar amb seguretat i criteri quan més importa."
                 }
             ]
+        },
+        "SPACES": {
+            "TITLE": "Espais Cardioprotegits: Solució Integral",
+            "TEASER": "Instal·lació, manteniment, registre i formació — la solució integral perquè el teu espai sigui realment cardioprotegit.",
+            "CONTENT": "<p>No n'hi ha prou amb tenir un desfibril·lador; cal assegurar-se que l'equip estigui operatiu i que el personal sàpiga com actuar. Oferim un servei de gestió integral perquè el teu centre sigui un espai segur de debò, complint amb la normativa vigent (Decret 151/2012 de la Generalitat de Catalunya).</p><h3 class=\"mt-4 text-xl font-semibold text-gray-900\">1. Assessorament i Venda de DEAs</h3><p class=\"mt-2 text-gray-700\">No tots els espais necessiten el mateix equipament. T’ajudem a triar el Desfibril·lador Extern Automàtic (DEA) que millor s’adapti a les teves instal·lacions:</p><ul class=\"list-disc list-inside space-y-2 ml-6\"><li>Equips d'última generació, fàcils d'utilitzar i amb instruccions per veu.</li><li>Models semiautomàtics o automàtics adaptats a entorns amb nens o adults.</li><li>Subministrament de vitrines, tòtems de rescat i senyalística homologada segons la normativa de visibilitat.</li></ul><h3 class=\"mt-4 text-xl font-semibold text-gray-900\">2. Instal·lació i Alta Logística</h3><p class=\"mt-2 text-gray-700\">Ens encarreguem que el teu desfibril·lador estigui on ha d'estar i a punt per fer-se servir:</p><ul class=\"list-disc list-inside space-y-2 ml-6\"><li>Instal·lació professional: Col·locació en punts estratègics per garantir un temps de resposta inferior a 4 minuts.</li><li>Registre oficial: Tramitem l'alta del dispositiu davant les autoritats sanitàries i el Departament de Salut (obligatori per llei).</li><li>Senyalització oficial: Instal·lació de la cartelleria indicativa de \"Zona Cardioprotegida\" i rutes d'accés al DEA.</li></ul><h3 class=\"mt-4 text-xl font-semibold text-gray-900\">3. Manteniment Preventiu i Correctiu</h3><p class=\"mt-2 text-gray-700\">Un DEA sense bateria o amb els elèctrodes caducats no salva vides. El nostre servei de manteniment et dona tranquil·litat absoluta:</p><ul class=\"list-disc list-inside space-y-2 ml-6\"><li>Revisions periòdiques: Comprovació de l'estat de la bateria, el programari i els consumibles (elèctrodes d'adult i pediàtrics).</li><li>Recanvis post-ús: Substitució immediata dels elèctrodes i el kit de rescat en cas d'utilització.</li><li>Actualitzacions de programari: Adaptem l'equip a les noves guies internacionals de reanimació sense cost addicional.</li></ul><h3 class=\"mt-4 text-xl font-semibold text-gray-900\">4. Gestió de la Formació Contínua</h3><p class=\"mt-2 text-gray-700\">Un espai cardioprotegit requereix personal format. Lliguem la instal·lació dels equips amb el nostre pla de formació oficial, gestionant els reciclatges periòdics necessaris per mantenir les certificacions vigents i la confiança del teu equip.</p><p class=\"mt-4 text-gray-700 font-semibold\">Sabies que...? La supervivència davant d'una aturada cardíaca disminueix un 10% per cada minut que passa sense desfibril·lació. Un centre cardioprotegit és la diferència entre un ensurt i una vida salvada.</p>",
+            "BUTTON_MORE_INFO": "Més informació",
+            "SIDEBAR": {
+                "CTA_TITLE": "Vols que t'ajudem?",
+                "CTA_TEXT": "Contacta amb nosaltres per a una avaluació gratuïta del teu espai i pressupost personalitzat.",
+                "EMAIL_LABEL": "Enviar Email",
+                "CONTACT_LABEL": "Contacte",
+                "FOOTER_TEXT": "També oferim servei complet d'instal·lació, manteniment i formació per empreses, escoles i entitats."
+            }
         },
         "FAQ": {
             "TITLE": "Preguntes Freqüents (FAQs)",
@@ -201,6 +236,7 @@ const allTranslations = {
                 "CALENDAR": "Calendario",
                 "ABOUT": "Cómo Trabajamos",
                 "TEAM": "Nuestro Equipo",
+                "SPACES": "Espacios Cardioprotegidos",
                 "FAQ": "FAQs",
                 "CONTACT": "Contacto"
             }
@@ -302,6 +338,26 @@ const allTranslations = {
                         "RCP pediátrica y uso del DEA en entornos escolares",
                         "Protocolo de activación del sistema de emergencias (SEM)"
                     ]
+                },
+                {
+                    "id": "taller-svb",
+                    "ICON": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-12 w-12 mx-auto text-red-600\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"1.5\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z\" /></svg>",
+                    "TITLE": "Taller de Soporte Vital Básico",
+                    "OBJECTIVE": "Ideal para: Un primer contacto rápido y práctico. En solo 90 minutos aprenderás a identificar una parada cardiorrespiratoria y a actuar con confianza. Sesión intensiva centrada en lo esencial.",
+                    "DURATION_LABEL": "Duración",
+                    "DURATION": "1,5 horas",
+                    "PRICE_LABEL": "Precio",
+                    "PRICE": "19,99€"
+                },
+                {
+                    "id": "primers-a-mida",
+                    "ICON": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-12 w-12 mx-auto text-red-600\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"1.5\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 11.667 0l3.181-3.183m-4.991-2.691V5.25a3.375 3.375 0 0 0-3.375-3.375H8.25a3.375 3.375 0 0 0-3.375 3.375v2.25\" /></svg>",
+                    "TITLE": "Primeros Auxilios a Medida",
+                    "DESCRIPTION": "Ideal para: Centros educativos, deportivos o empresas con necesidades específicas. Diseñamos un programa adaptado exclusivamente a vuestro centro.",
+                    "DURATION_LABEL": "Duración",
+                    "DURATION": "A concretar según programa",
+                    "PRICE_LABEL": "Precio",
+                    "PRICE": "A pactar"
                 }
             ]
         },
@@ -314,6 +370,19 @@ const allTranslations = {
                 "<strong>Formación a medida:</strong> Simulaciones contextualizadas y adaptadas a vuestro entorno.",
                 "<strong>Flexibilidad y proximidad:</strong> Nos adaptamos a horarios, grupos y espacios con un trato directo."
             ]
+        },
+        "SPACES": {
+            "TITLE": "Espacios Cardioprotegidos: Solución Integral",
+            "TEASER": "Instalación, mantenimiento, registro y formación — la solución integral para que tu espacio sea realmente cardioprotegido.",
+            "CONTENT": "<p>No basta con tener un desfibrilador; hay que asegurarse de que el equipo esté operativo y que el personal sepa cómo actuar. Ofrecemos un servicio de gestión integral para que tu centro sea un espacio realmente seguro, cumpliendo la normativa vigente (Decreto 151/2012 de la Generalitat de Cataluña).</p><h3 class=\"mt-4 text-xl font-semibold text-gray-900\">1. Asesoramiento y Venta de DEAs</h3><p class=\"mt-2 text-gray-700\">No todos los espacios necesitan el mismo equipamiento. Te ayudamos a elegir el Desfibrilador Externo Automático (DEA) que mejor se adapte a tus instalaciones:</p><ul class=\"list-disc list-inside space-y-2 ml-6\"><li>Equipos de última generación, fáciles de usar y con instrucciones por voz.</li><li>Modelos semiautomáticos o automáticos adaptados a entornos con niños o adultos.</li><li>Suministro de vitrinas, tótems de rescate y señalización homologada según la normativa de visibilidad.</li></ul><h3 class=\"mt-4 text-xl font-semibold text-gray-900\">2. Instalación y Alta Logística</h3><p class=\"mt-2 text-gray-700\">Nos encargamos de que tu desfibrilador esté donde debe estar y listo para usarse:</p><ul class=\"list-disc list-inside space-y-2 ml-6\"><li>Instalación profesional: Colocación en puntos estratégicos para garantizar un tiempo de respuesta inferior a 4 minutos.</li><li>Registro oficial: Tramitamos el alta del dispositivo ante las autoridades sanitarias y el Departament de Salut (obligatorio por ley).</li><li>Señalización oficial: Instalación de la cartelería indicativa de \"Zona Cardioprotegida\" y rutas de acceso al DEA.</li></ul><h3 class=\"mt-4 text-xl font-semibold text-gray-900\">3. Mantenimiento Preventivo y Correctivo</h3><p class=\"mt-2 text-gray-700\">Un DEA sin batería o con los electrodos caducados no salva vidas. Nuestro servicio de mantenimiento te da tranquilidad absoluta:</p><ul class=\"list-disc list-inside space-y-2 ml-6\"><li>Revisiones periódicas: Comprobación del estado de la batería, el software y los consumibles (electrodos de adulto y pediátricos).</li><li>Repuestos post-uso: Sustitución inmediata de los electrodos y el kit de rescate en caso de utilización.</li><li>Actualizaciones de software: Adaptamos el equipo a las nuevas guías internacionales de reanimación sin coste adicional.</li></ul><h3 class=\"mt-4 text-xl font-semibold text-gray-900\">4. Gestión de la Formación Continua</h3><p class=\"mt-2 text-gray-700\">Un espacio cardioprotegido requiere personal formado. Vinculamos la instalación de los equipos con nuestro plan de formación oficial, gestionando los reciclajes periódicos necesarios para mantener las certificaciones vigentes y la confianza de tu equipo.</p><p class=\"mt-4 text-gray-700 font-semibold\">¿Sabías que...? La supervivencia ante una parada cardíaca disminuye un 10% por cada minuto que pasa sin desfibrilación. Un centro cardioprotegido es la diferencia entre un susto y una vida salvada.</p>",
+            "BUTTON_MORE_INFO": "Más información",
+            "SIDEBAR": {
+                "CTA_TITLE": "¿Quieres que te ayudemos?",
+                "CTA_TEXT": "Contacta con nosotros para una evaluación gratuita de tu espacio y presupuesto personalizado.",
+                "EMAIL_LABEL": "Enviar Email",
+                "CONTACT_LABEL": "Contacto",
+                "FOOTER_TEXT": "También ofrecemos servicio completo de instalación, mantenimiento y formación para empresas, escuelas y entidades."
+            }
         },
         "TEAM": {
             "TITLE": "Nuestro Equipo",
@@ -395,6 +464,16 @@ export class TranslationService {
     t = computed(() => allTranslations[this.language()]);
 
     constructor() {
+        try {
+            const stored = typeof localStorage !== 'undefined' ? localStorage.getItem('usave_lang') : null;
+            if (stored === 'ca' || stored === 'es') {
+                this.language.set(stored as 'ca' | 'es');
+                return;
+            }
+        } catch (e) {
+            // ignore localStorage access errors
+        }
+
         if (typeof navigator !== 'undefined' && navigator.language) {
             const browserLang = navigator.language.split('-')[0];
             const langToUse = browserLang.match(/ca|es/) ? browserLang as 'ca' | 'es' : 'ca';
@@ -404,5 +483,12 @@ export class TranslationService {
 
     useLanguage(language: 'ca' | 'es'): void {
         this.language.set(language);
+        try {
+            if (typeof localStorage !== 'undefined') {
+                localStorage.setItem('usave_lang', language);
+            }
+        } catch (e) {
+            // ignore localStorage write errors
+        }
     }
 }

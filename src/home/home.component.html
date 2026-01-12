@@ -49,6 +49,22 @@
     </div>
 </section>
 
+<!-- Spaces Section (like About) -->
+<section id="spaces" class="py-20 bg-white">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row-reverse items-center gap-12">
+        <div class="md:w-1/2">
+            <img src="assets/images/DEA.jpg" alt="DEA installation" class="rounded-lg shadow-2xl w-full object-cover max-h-96">
+        </div>
+        <div class="md:w-1/2">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{{ t().SPACES.TITLE }}</h2>
+                <p class="text-gray-700 leading-relaxed mb-4">{{ t().SPACES.TEASER }}</p>
+            <div class="mt-4">
+                <a [routerLink]="['/espais-cardioprotegits']" class="inline-block bg-red-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-red-700">{{ t().SPACES.BUTTON_MORE_INFO }}</a>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- About Section ("How We Work") -->
 <section id="about" class="py-20 bg-white">
     <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
@@ -142,3 +158,4 @@
         </div>
     </div>
 </section>
+
