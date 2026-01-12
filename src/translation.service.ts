@@ -140,6 +140,13 @@ const allTranslations = {
                     "IMAGE_URL": "assets/images/Marc.jpg",
                     "DESCRIPTION": "Amb experiéncia en pacient crític i urgències, en Marc té una gran vocació per la docència. El seu objectiu és que cada alumne se senti segur i preparat per aplicar els coneixements apresos."
                 }
+                ,
+                {
+                    "NAME": "Albert",
+                    "ROLE": "Infermer i Instructor ERC",
+                    "IMAGE_URL": "assets/images/Albert.jpg",
+                    "DESCRIPTION": "Amb anys d'experiència en urgències hospitalàries, l'Albert ofereix un enfocament proper i pràctic, ajudant les persones a actuar amb seguretat i criteri quan més importa."
+                }
             ]
         },
         "FAQ": {
@@ -323,6 +330,13 @@ const allTranslations = {
                     "ROLE": "Enfermero e Instructor ERC",
                     "IMAGE_URL": "assets/images/Marc.jpg",
                     "DESCRIPTION": "Con experiencia en paciente crítico y urgencias, Marc tiene una gran vocación por la docencia. Su objetivo es que cada alumno se sienta seguro y preparado para aplicar los conocimientos aprendidos."
+                }
+                ,
+                {
+                    "NAME": "Albert",
+                    "ROLE": "Enfermero e Instructor ERC",
+                    "IMAGE_URL": "assets/images/Albert.jpg",
+                    "DESCRIPTION": "Con años de experiencia en urgencias hospitalarias, Albert ofrece un enfoque cercano y práctico, ayudando a las personas a actuar con seguridad y criterio cuando más importa."
                 }
             ]
         },
