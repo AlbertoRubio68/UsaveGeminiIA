@@ -84,37 +84,6 @@ const allTranslations = {
                     ]
                 },
                 {
-                    "id": "pares",
-                    "ICON": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-12 w-12 mx-auto text-red-600\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"1.5\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75a17.933 17.933 0 0 1-7.499-1.632Z\" /></svg>",
-                    "TITLE": "Primers Auxilis per a Pares i Mares de Nadons (0-1 any)",
-                    "DESCRIPTION": "Dotar les famílies amb nadons de les eines necessàries per identificar i actuar amb rapidesa i seguretat davant situacions d'emergència freqüents.",
-                    "DURATION": "3-4 hores",
-                    "CONTENT_TITLE": "Contingut principal:",
-                    "CONTENT_LIST": [
-                        "Prevenció d'accidents a la llar",
-                        "Actuació davant febre i convulsions",
-                        "Reconeixement i maniobres per a l'ennuegament (OVACE)",
-                        "Reanimació cardiopulmonar (RCP) en lactants",
-                        "Consells bàsics sobre farmaciola i trucada a emergències"
-                    ]
-                },
-                {
-                    "id": "educadors",
-                    "ICON": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-12 w-12 mx-auto text-red-600\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"1.5\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M20.25 14.15v4.07a2.25 2.25 0 0 1-2.25 2.25h-13.5a2.25 2.25 0 0 1-2.25-2.25v-4.07m18-4.22a2.25 2.25 0 0 0-2.25-2.25H6.375a2.25 2.25 0 0 0-2.25 2.25m18 0M12.75 9.75h.008v.008h-.008V9.75Zm-1.5 0h.008v.008h-.008V9.75Zm-1.5 0h.008v.008h-.008V9.75Zm-1.5 0h.008v.008h-.008V9.75Zm6 0h.008v.008h-.008V9.75Zm-1.5 0h.008v.008h-.008V9.75Zm-1.5 0h.008v.008h-.008V9.75Zm-1.5 0h.008v.008h-.008V9.75Z\" /></svg>",
-                    "TITLE": "Primers Auxilis per a Educadors/es d'Escoles Infantils",
-                    "DESCRIPTION": "Capacitar els equips professionals de centres d'educació infantil per actuar davant emergències mèdiques freqüents, garantint una resposta ràpida i segura.",
-                    "DURATION": "4-5 hores",
-                    "CONTENT_TITLE": "Contingut principal:",
-                    "CONTENT_LIST": [
-                        "Gestió de ferides, hemorràgies i traumatismes lleus",
-                        "Actuació davant reaccions al·lèrgiques i asma",
-                        "Prevenció i actuació en ennuegaments (OVACE) en nens",
-                        "RCP pediàtrica i ús del DEA en entorns escolars",
-                        "Protocol d'activació del sistema d'emergències (SEM)"
-                    ]
-                }
-                ,
-                {
                     "id": "taller-svb",
                     "ICON": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-12 w-12 mx-auto text-red-600\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"1.5\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z\" /></svg>",
                     "TITLE": "Taller de Suport Vital Bàsic",
@@ -151,13 +120,13 @@ const allTranslations = {
             "SUBTITLE": "Som dos infermers amb experiència en emergències, apassionats per la formació.",
             "MEMBERS": [
                 {
-                    "NAME": "Xavier Gomez Girbau",
+                    "NAME": "Xavier",
                     "ROLE": "Infermer i Instructor ERC",
                     "IMAGE_URL": "assets/images/Xavi.jpg",
                     "DESCRIPTION": "Amb anys d'experiència en serveis d'urgències hospitalàries i emergencies extrahospitalaries, en Xavier aporta una perspectiva pràctica i realista a cada curs. La seva passió és ensenyar a actuar amb calma i eficàcia en moments crítics."
                 },
                 {
-                    "NAME": "Marc Engli Ferret",
+                    "NAME": "Marc",
                     "ROLE": "Infermer i Instructor ERC",
                     "IMAGE_URL": "assets/images/Marc.jpg",
                     "DESCRIPTION": "Amb experiéncia en pacient crític i urgències, en Marc té una gran vocació per la docència. El seu objectiu és que cada alumne se senti segur i preparat per aplicar els coneixements apresos."
@@ -310,36 +279,6 @@ const allTranslations = {
                     ]
                 },
                 {
-                    "id": "pares",
-                    "ICON": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-12 w-12 mx-auto text-red-600\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"1.5\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75a17.933 17.933 0 0 1-7.499-1.632Z\" /></svg>",
-                    "TITLE": "Primeros Auxilios para Padres y Madres de Bebés (0-1 año)",
-                    "DESCRIPTION": "Dotar a las familias con bebés de las herramientas necesarias para identificar y actuar con rapidez y seguridad ante situaciones de emergencia frecuentes.",
-                    "DURATION": "3-4 horas",
-                    "CONTENT_TITLE": "Contenido principal:",
-                    "CONTENT_LIST": [
-                        "Prevención de accidentes en el hogar",
-                        "Actuación ante fiebre y convulsiones",
-                        "Reconocimiento y maniobras para el atragantamiento (OVACE)",
-                        "Reanimación cardiopulmonar (RCP) en lactantes",
-                        "Consejos básicos sobre botiquín y llamada a emergencias"
-                    ]
-                },
-                {
-                    "id": "educadors",
-                    "ICON": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-12 w-12 mx-auto text-red-600\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"1.5\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M20.25 14.15v4.07a2.25 2.25 0 0 1-2.25 2.25h-13.5a2.25 2.25 0 0 1-2.25-2.25v-4.07m18-4.22a2.25 2.25 0 0 0-2.25-2.25H6.375a2.25 2.25 0 0 0-2.25 2.25m18 0M12.75 9.75h.008v.008h-.008V9.75Zm-1.5 0h.008v.008h-.008V9.75Zm-1.5 0h.008v.008h-.008V9.75Zm-1.5 0h.008v.008h-.008V9.75Zm6 0h.008v.008h-.008V9.75Zm-1.5 0h.008v.008h-.008V9.75Zm-1.5 0h.008v.008h-.008V9.75Zm-1.5 0h.008v.008h-.008V9.75Z\" /></svg>",
-                    "TITLE": "Primeros Auxilios para Educadores/as de Escuelas Infantiles",
-                    "DESCRIPTION": "Capacitar a los equipos profesionales de centros de educación infantil para actuar ante emergencias médicas frecuentes, garantizando una respuesta rápida y segura.",
-                    "DURATION": "4-5 horas",
-                    "CONTENT_TITLE": "Contenido principal:",
-                    "CONTENT_LIST": [
-                        "Gestión de heridas, hemorragias y traumatismos leves",
-                        "Actuación ante reacciones alérgicas y asma",
-                        "Prevención y actuación en atragantamientos (OVACE) en niños",
-                        "RCP pediátrica y uso del DEA en entornos escolares",
-                        "Protocolo de activación del sistema de emergencias (SEM)"
-                    ]
-                },
-                {
                     "id": "taller-svb",
                     "ICON": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-12 w-12 mx-auto text-red-600\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"1.5\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z\" /></svg>",
                     "TITLE": "Taller de Soporte Vital Básico",
@@ -389,13 +328,13 @@ const allTranslations = {
             "SUBTITLE": "Somos dos enfermeros con experiencia en emergencias, apasionados por la formación.",
             "MEMBERS": [
                 {
-                    "NAME": "Xavier Gomez Girbau",
+                    "NAME": "Xavier",
                     "ROLE": "Enfermero e Instructor ERC",
                     "IMAGE_URL": "assets/images/Xavi.jpg",
                     "DESCRIPTION": "Con años de experiencia en servicios de urgencias hospitalarias y emergencias extrahospitalarias, Xavier aporta una perspectiva práctica y realista a cada curso. Su pasión es enseñar a actuar con calma y eficacia en momentos críticos."
                 },
                 {
-                    "NAME": "Marc Engli Ferret",
+                    "NAME": "Marc",
                     "ROLE": "Enfermero e Instructor ERC",
                     "IMAGE_URL": "assets/images/Marc.jpg",
                     "DESCRIPTION": "Con experiencia en paciente crítico y urgencias, Marc tiene una gran vocación por la docencia. Su objetivo es que cada alumno se sienta seguro y preparado para aplicar los conocimientos aprendidos."
