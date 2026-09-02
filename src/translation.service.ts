@@ -15,7 +15,7 @@ const allTranslations = {
             }
         },
         "HERO": {
-            "TITLE": "Formació en primers auxilis i cardioprotecció per al teu <span class=\"text-red-600\">equip</span>",
+            "TITLE": "Formació en primers auxilis i cardioprotecció per al teu <span class=\"text-blue-300\">equip</span>",
             "SUBTITLE": "Cursos oficials de SVB + DEA, pràctics i impartits per instructors ERC. Ens desplacem a empreses, centres esportius i educatius de Barcelona.",
             "CTA_BUTTON": "Veure cursos"
         },
@@ -248,7 +248,7 @@ const allTranslations = {
             }
         },
         "HERO": {
-            "TITLE": "Formación en primeros auxilios y cardioprotección para tu <span class=\"text-red-600\">equipo</span>",
+            "TITLE": "Formación en primeros auxilios y cardioprotección para tu <span class=\"text-blue-300\">equipo</span>",
             "SUBTITLE": "Cursos oficiales de SVB + DEA, prácticos e impartidos por instructores ERC. Nos desplazamos a empresas, centros deportivos y educativos de Barcelona.",
             "CTA_BUTTON": "Ver cursos"
         },
