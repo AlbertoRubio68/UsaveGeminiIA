@@ -15,9 +15,35 @@ const allTranslations = {
             }
         },
         "HERO": {
-            "TITLE": "Formació Oficial en SVB i ús del DEA amb <span class=\"text-red-600\">Certificació ERC</span>",
-            "SUBTITLE": "Compromesos amb la divulgació i l'ensenyament del Suport Vital Bàsic (SVB) per apropar la formació en primers auxilis a tota la ciutadania.",
-            "CTA_BUTTON": "Explora els Cursos"
+            "TITLE": "Formació en primers auxilis i cardioprotecció per al teu <span class=\"text-red-600\">equip</span>",
+            "SUBTITLE": "Cursos oficials de SVB + DEA, pràctics i impartits per instructors ERC. Ens desplacem a empreses, centres esportius i educatius de Barcelona.",
+            "CTA_BUTTON": "Veure cursos"
+        },
+        "CONVERSION": {
+            "BADGE": "Barcelona · Instructors acreditats ERC",
+            "PRIMARY_CTA": "Demanar pressupost",
+            "SECONDARY_CTA": "Veure cursos",
+            "REASSURANCE": "Formació pràctica · Ens adaptem al vostre espai i horari · Proposta personalitzada",
+            "AUDIENCE_TITLE": "Formació que s'adapta al teu entorn",
+            "AUDIENCES": [
+                { "title": "Empreses", "description": "Prepara el teu equip per actuar amb seguretat davant una emergència." },
+                { "title": "Centres esportius", "description": "Formació i cardioprotecció per protegir esportistes, personal i famílies." },
+                { "title": "Centres educatius", "description": "Sessions pràctiques i adaptades per a docents, alumnat i personal." }
+            ],
+            "CONTACT_REASSURANCE": "Explica'ns què necessiteu i us prepararem una proposta a mida."
+        },
+        "CLIENTS": {
+            "EYEBROW": "Experiència sobre el terreny",
+            "TITLE": "Entitats que han confiat en nosaltres",
+            "SUBTITLE": "Treballem amb entitats esportives, educatives i comunitàries per crear espais més preparats i segurs.",
+            "LIST": [
+                { "name": "CrossFit Scorpion", "logo": "assets/images/clients/scorpion.png", "dark": true },
+                { "name": "Autoescoles Hoy-Voy", "logo": "assets/images/clients/hoy-voy.png" },
+                { "name": "Odicean", "logo": "assets/images/clients/odicean.png" },
+                { "name": "Johan Cruyff Institute", "logo": "assets/images/clients/johan-cruyff-institute.png" },
+                { "name": "Centre Mèdic Marina", "logo": "assets/images/clients/centre-medic-marina.jpeg" },
+                { "name": "Centre Mèdic Ballester" }
+            ]
         },
         "COURSES": {
             "SECTION_TITLE": "La Nostra Oferta Formativa",
@@ -211,9 +237,35 @@ const allTranslations = {
             }
         },
         "HERO": {
-            "TITLE": "Formación Oficial en SVB y uso del DEA con <span class=\"text-red-600\">Certificación ERC</span>",
-            "SUBTITLE": "Comprometidos con la divulgación y la enseñanza del Soporte Vital Básico (SVB) para acercar la formación en primeros auxilios a toda la ciudadanía.",
-            "CTA_BUTTON": "Explora los Cursos"
+            "TITLE": "Formación en primeros auxilios y cardioprotección para tu <span class=\"text-red-600\">equipo</span>",
+            "SUBTITLE": "Cursos oficiales de SVB + DEA, prácticos e impartidos por instructores ERC. Nos desplazamos a empresas, centros deportivos y educativos de Barcelona.",
+            "CTA_BUTTON": "Ver cursos"
+        },
+        "CONVERSION": {
+            "BADGE": "Barcelona · Instructores acreditados ERC",
+            "PRIMARY_CTA": "Solicitar presupuesto",
+            "SECONDARY_CTA": "Ver cursos",
+            "REASSURANCE": "Formación práctica · Nos adaptamos a vuestro espacio y horario · Propuesta personalizada",
+            "AUDIENCE_TITLE": "Formación que se adapta a tu entorno",
+            "AUDIENCES": [
+                { "title": "Empresas", "description": "Prepara a tu equipo para actuar con seguridad ante una emergencia." },
+                { "title": "Centros deportivos", "description": "Formación y cardioprotección para proteger a deportistas, personal y familias." },
+                { "title": "Centros educativos", "description": "Sesiones prácticas y adaptadas para docentes, alumnado y personal." }
+            ],
+            "CONTACT_REASSURANCE": "Cuéntanos qué necesitáis y os prepararemos una propuesta a medida."
+        },
+        "CLIENTS": {
+            "EYEBROW": "Experiencia sobre el terreno",
+            "TITLE": "Entidades que han confiado en nosotros",
+            "SUBTITLE": "Trabajamos con entidades deportivas, educativas y comunitarias para crear espacios más preparados y seguros.",
+            "LIST": [
+                { "name": "CrossFit Scorpion", "logo": "assets/images/clients/scorpion.png", "dark": true },
+                { "name": "Autoescuelas Hoy-Voy", "logo": "assets/images/clients/hoy-voy.png" },
+                { "name": "Odicean", "logo": "assets/images/clients/odicean.png" },
+                { "name": "Johan Cruyff Institute", "logo": "assets/images/clients/johan-cruyff-institute.png" },
+                { "name": "Centre Médico Marina", "logo": "assets/images/clients/centre-medic-marina.jpeg" },
+                { "name": "Centro Médico Ballester" }
+            ]
         },
         "COURSES": {
             "SECTION_TITLE": "Nuestra Oferta Formativa",
@@ -386,7 +438,7 @@ const allTranslations = {
             "TITLE": "Contacto y Próximos Pasos",
             "SUBTITLE": "Si vuestra entidad tiene interés en ofrecer formación, estamos a vuestra disposición. Contactadnos para una propuesta personalizada.",
             "EMAIL_BUTTON": "Enviar un Email",
-            "PHONE_TEXT": ""
+            "PHONE_TEXT": "o llámanos al 616 131 411"
         },
         "FOOTER": {
             "COPYRIGHT": "Todos los derechos reservados."
