@@ -110,16 +110,6 @@ const allTranslations = {
                     ]
                 },
                 {
-                    "id": "taller-svb",
-                    "ICON": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-12 w-12 mx-auto text-red-600\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"1.5\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z\" /></svg>",
-                    "TITLE": "Taller de Suport Vital Bàsic",
-                    "OBJECTIVE": "Ideal per a: Un primer contacte ràpid i pràctic. En només 90 minuts, aprendràs a identificar una aturada cardiorespiratòria i a actuar sense por. Sessió intensiva centrada en els primers minuts crítics.",
-                    "DURATION_LABEL": "Durada",
-                    "DURATION": "1,5 hores",
-                    "PRICE_LABEL": "Preu",
-                    "PRICE": "19,99€"
-                },
-                {
                     "id": "primers-a-mida",
                     "ICON": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-12 w-12 mx-auto text-red-600\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"1.5\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 11.667 0l3.181-3.183m-4.991-2.691V5.25a3.375 3.375 0 0 0-3.375-3.375H8.25a3.375 3.375 0 0 0-3.375 3.375v2.25\" /></svg>",
                     "TITLE": "Primers Auxilis a Mida",
@@ -128,6 +118,26 @@ const allTranslations = {
                     "DURATION": "A concretar segons programa",
                     "PRICE_LABEL": "Preu",
                     "PRICE": "100€ / hora"
+                },
+                {
+                    "id": "lloguer-dea",
+                    "ICON": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-12 w-12 mx-auto text-red-600\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"1.5\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M13 10V3L4 14h7v7l9-11h-7Z\" /></svg>",
+                    "TITLE": "Lloguer de DEA + Formació",
+                    "DESCRIPTION": "DEA per al teu espai, instal·lació i formació per a un grup de fins a 8 persones.",
+                    "DURATION_LABEL": "Modalitat",
+                    "DURATION": "Quota mensual",
+                    "PRICE_LABEL": "Preu",
+                    "PRICE": "55€/mes + 90€ instal·lació"
+                },
+                {
+                    "id": "compra-dea",
+                    "ICON": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-12 w-12 mx-auto text-red-600\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"1.5\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M13 10V3L4 14h7v7l9-11h-7Z\" /></svg>",
+                    "TITLE": "Compra de DEA + Formació",
+                    "DESCRIPTION": "Compra del DEA amb formació inicial inclosa per a un grup de fins a 8 persones.",
+                    "DURATION_LABEL": "Modalitat",
+                    "DURATION": "Pagament únic",
+                    "PRICE_LABEL": "Preu",
+                    "PRICE": "1.599€"
                 },
             ]
         },
@@ -331,16 +341,6 @@ const allTranslations = {
                     ]
                 },
                 {
-                    "id": "taller-svb",
-                    "ICON": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-12 w-12 mx-auto text-red-600\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"1.5\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z\" /></svg>",
-                    "TITLE": "Taller de Soporte Vital Básico",
-                    "OBJECTIVE": "Ideal para: Un primer contacto rápido y práctico. En solo 90 minutos aprenderás a identificar una parada cardiorrespiratoria y a actuar con confianza. Sesión intensiva centrada en lo esencial.",
-                    "DURATION_LABEL": "Duración",
-                    "DURATION": "1,5 horas",
-                    "PRICE_LABEL": "Precio",
-                    "PRICE": "19,99€"
-                },
-                {
                     "id": "primers-a-mida",
                     "ICON": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-12 w-12 mx-auto text-red-600\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"1.5\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 11.667 0l3.181-3.183m-4.991-2.691V5.25a3.375 3.375 0 0 0-3.375-3.375H8.25a3.375 3.375 0 0 0-3.375 3.375v2.25\" /></svg>",
                     "TITLE": "Primeros Auxilios a Medida",
@@ -349,6 +349,26 @@ const allTranslations = {
                     "DURATION": "A concretar según programa",
                     "PRICE_LABEL": "Precio",
                     "PRICE": "100€ / hora"
+                },
+                {
+                    "id": "alquiler-dea",
+                    "ICON": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-12 w-12 mx-auto text-red-600\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"1.5\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M13 10V3L4 14h7v7l9-11h-7Z\" /></svg>",
+                    "TITLE": "Alquiler de DEA + Formación",
+                    "DESCRIPTION": "DEA para tu espacio, instalación y formación para un grupo de hasta 8 personas.",
+                    "DURATION_LABEL": "Modalidad",
+                    "DURATION": "Cuota mensual",
+                    "PRICE_LABEL": "Precio",
+                    "PRICE": "55€/mes + 90€ instalación"
+                },
+                {
+                    "id": "compra-dea",
+                    "ICON": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-12 w-12 mx-auto text-red-600\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"1.5\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M13 10V3L4 14h7v7l9-11h-7Z\" /></svg>",
+                    "TITLE": "Compra de DEA + Formación",
+                    "DESCRIPTION": "Compra del DEA con formación inicial incluida para un grupo de hasta 8 personas.",
+                    "DURATION_LABEL": "Modalidad",
+                    "DURATION": "Pago único",
+                    "PRICE_LABEL": "Precio",
+                    "PRICE": "1.599€"
                 }
             ]
         },
