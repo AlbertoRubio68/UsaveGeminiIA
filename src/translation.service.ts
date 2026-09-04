@@ -37,7 +37,7 @@ const allTranslations = {
             "TITLE": "Entitats que han confiat en nosaltres",
             "SUBTITLE": "Treballem amb entitats esportives, educatives i comunitàries per crear espais més preparats i segurs.",
             "LIST": [
-                { "name": "CrossFit Scorpion", "logo": "assets/images/clients/scorpion.png", "dark": true },
+                { "name": "CrossFit Scorpion", "logo": "assets/images/clients/scorpion.png" },
                 { "name": "Autoescoles Hoy-Voy", "logo": "assets/images/clients/hoy-voy.png" },
                 { "name": "Odicean", "logo": "assets/images/clients/odicean.png" },
                 { "name": "Johan Cruyff Institute", "logo": "assets/images/clients/johan-cruyff-institute.png" },
@@ -159,20 +159,20 @@ const allTranslations = {
                     "NAME": "Xavier",
                     "ROLE": "Infermer i Instructor ERC",
                     "IMAGE_URL": "assets/images/Xavi.jpg",
-                    "DESCRIPTION": "Amb anys d'experiència en serveis d'urgències hospitalàries i emergencies extrahospitalaries, en Xavier aporta una perspectiva pràctica i realista a cada curs. La seva passió és ensenyar a actuar amb calma i eficàcia en moments crítics."
+                    "DESCRIPTION": "Infermer i instructor ERC, amb experiència en urgències hospitalàries i emergències extrahospitalàries. Imparteix formació pràctica basada en protocols actualitzats i situacions reals."
                 },
                 {
                     "NAME": "Marc",
                     "ROLE": "Infermer i Instructor ERC",
                     "IMAGE_URL": "assets/images/Marc.jpg",
-                    "DESCRIPTION": "Amb experiéncia en pacient crític i urgències, en Marc té una gran vocació per la docència. El seu objectiu és que cada alumne se senti segur i preparat per aplicar els coneixements apresos."
+                    "DESCRIPTION": "Infermer i instructor ERC amb experiència en pacient crític i serveis d'urgències. Combina coneixement clínic i metodologia docent per oferir una formació clara, estructurada i aplicable."
                 }
                 ,
                 {
                     "NAME": "Albert",
                     "ROLE": "Infermer i Instructor ERC",
                     "IMAGE_URL": "assets/images/Albert.jpg",
-                    "DESCRIPTION": "Amb anys d'experiència en urgències hospitalàries, l'Albert ofereix un enfocament proper i pràctic, ajudant les persones a actuar amb seguretat i criteri quan més importa."
+                    "DESCRIPTION": "Infermer i instructor ERC amb experiència en urgències hospitalàries. Aporta un enfocament tècnic i orientat a la presa de decisions en l'atenció inicial a les emergències."
                 }
             ]
         },
@@ -270,7 +270,7 @@ const allTranslations = {
             "TITLE": "Entidades que han confiado en nosotros",
             "SUBTITLE": "Trabajamos con entidades deportivas, educativas y comunitarias para crear espacios más preparados y seguros.",
             "LIST": [
-                { "name": "CrossFit Scorpion", "logo": "assets/images/clients/scorpion.png", "dark": true },
+                { "name": "CrossFit Scorpion", "logo": "assets/images/clients/scorpion.png" },
                 { "name": "Autoescuelas Hoy-Voy", "logo": "assets/images/clients/hoy-voy.png" },
                 { "name": "Odicean", "logo": "assets/images/clients/odicean.png" },
                 { "name": "Johan Cruyff Institute", "logo": "assets/images/clients/johan-cruyff-institute.png" },
@@ -405,20 +405,20 @@ const allTranslations = {
                     "NAME": "Xavier",
                     "ROLE": "Enfermero e Instructor ERC",
                     "IMAGE_URL": "assets/images/Xavi.jpg",
-                    "DESCRIPTION": "Con años de experiencia en servicios de urgencias hospitalarias y emergencias extrahospitalarias, Xavier aporta una perspectiva práctica y realista a cada curso. Su pasión es enseñar a actuar con calma y eficacia en momentos críticos."
+                    "DESCRIPTION": "Enfermero e instructor ERC, con experiencia en urgencias hospitalarias y emergencias extrahospitalarias. Imparte formación práctica basada en protocolos actualizados y situaciones reales."
                 },
                 {
                     "NAME": "Marc",
                     "ROLE": "Enfermero e Instructor ERC",
                     "IMAGE_URL": "assets/images/Marc.jpg",
-                    "DESCRIPTION": "Con experiencia en paciente crítico y urgencias, Marc tiene una gran vocación por la docencia. Su objetivo es que cada alumno se sienta seguro y preparado para aplicar los conocimientos aprendidos."
+                    "DESCRIPTION": "Enfermero e instructor ERC con experiencia en paciente crítico y servicios de urgencias. Combina conocimiento clínico y metodología docente para ofrecer una formación clara, estructurada y aplicable."
                 }
                 ,
                 {
                     "NAME": "Albert",
                     "ROLE": "Enfermero e Instructor ERC",
                     "IMAGE_URL": "assets/images/Albert.jpg",
-                    "DESCRIPTION": "Con años de experiencia en urgencias hospitalarias, Albert ofrece un enfoque cercano y práctico, ayudando a las personas a actuar con seguridad y criterio cuando más importa."
+                    "DESCRIPTION": "Enfermero e instructor ERC con experiencia en urgencias hospitalarias. Aporta un enfoque técnico y orientado a la toma de decisiones en la atención inicial a las emergencias."
                 }
             ]
         },
