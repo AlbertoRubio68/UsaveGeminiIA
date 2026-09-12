@@ -43,7 +43,7 @@ const allTranslations = {
                 { "name": "Johan Cruyff Institute", "logo": "assets/images/clients/johan-cruyff-institute.png" },
                 { "name": "Centre Mèdic Marina", "logo": "assets/images/clients/centre-medic-marina.jpeg" },
                 { "name": "Centre Mèdic Ballester", "logo": "assets/images/clients/centro-medico-ballester.png" },
-                { "name": "Wodcelona", "logo": "assets/images/clients/wodcelona.svg" }
+                { "name": "Wodcelona", "logo": "assets/images/clients/wodcelona.svg?v=2f8ac444" }
             ]
         },
         "COURSES": {
@@ -277,7 +277,7 @@ const allTranslations = {
                 { "name": "Johan Cruyff Institute", "logo": "assets/images/clients/johan-cruyff-institute.png" },
                 { "name": "Centre Médico Marina", "logo": "assets/images/clients/centre-medic-marina.jpeg" },
                 { "name": "Centro Médico Ballester", "logo": "assets/images/clients/centro-medico-ballester.png" },
-                { "name": "Wodcelona", "logo": "assets/images/clients/wodcelona.svg" }
+                { "name": "Wodcelona", "logo": "assets/images/clients/wodcelona.svg?v=2f8ac444" }
             ]
         },
         "COURSES": {
