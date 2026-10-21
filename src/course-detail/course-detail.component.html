@@ -35,7 +35,7 @@
           @if (courseData.DURATION_LABEL) {
           <div>
             <span class="font-bold text-gray-800">{{ courseData.DURATION_LABEL }}:</span>
-            <span class="text-gray-600 ml-2">{{ courseData.DURATION_VALUE }}</span>
+            <span class="text-gray-600 ml-2">{{ courseData.DURATION_VALUE || courseData.DURATION }}</span>
           </div>
           } @else {
           <div>
