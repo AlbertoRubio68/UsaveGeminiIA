@@ -159,22 +159,22 @@ const allTranslations = {
             "MEMBERS": [
                 {
                     "NAME": "Xavier",
-                    "ROLE": "Infermer i Instructor ERC",
+                    "ROLE": "Infermer del SEM i instructor de SVB",
                     "IMAGE_URL": "assets/images/Xavi.jpg",
-                    "DESCRIPTION": "Infermer i instructor ERC, amb experiència en urgències hospitalàries i emergències extrahospitalàries. Imparteix formació pràctica basada en protocols actualitzats i situacions reals."
+                    "DESCRIPTION": "Infermer del Sistema d’Emergències Mèdiques (SEM) i instructor de Suport Vital Bàsic (SVB). Imparteix formació pràctica basada en situacions reals d’emergència."
                 },
                 {
                     "NAME": "Marc",
-                    "ROLE": "Infermer i Instructor ERC",
+                    "ROLE": "Infermer d’Urgències i UCI · Instructor de SVB i SVA",
                     "IMAGE_URL": "assets/images/Marc.jpg",
-                    "DESCRIPTION": "Infermer i instructor ERC amb experiència en pacient crític i serveis d'urgències. Combina coneixement clínic i metodologia docent per oferir una formació clara, estructurada i aplicable."
+                    "DESCRIPTION": "Infermer d’Urgències i de la Unitat de Cures Intensives (UCI), i instructor de Suport Vital Bàsic (SVB) i Suport Vital Avançat (SVA). Combina l’experiència clínica amb una formació clara, pràctica i aplicable."
                 }
                 ,
                 {
                     "NAME": "Albert",
-                    "ROLE": "Infermer i Instructor ERC",
+                    "ROLE": "Infermer d’Urgències i instructor de SVB",
                     "IMAGE_URL": "assets/images/Albert.jpg",
-                    "DESCRIPTION": "Infermer i instructor ERC amb experiència en urgències hospitalàries. Aporta un enfocament tècnic i orientat a la presa de decisions en l'atenció inicial a les emergències."
+                    "DESCRIPTION": "Infermer d’Urgències i instructor de Suport Vital Bàsic (SVB). Aporta un enfocament pràctic per reconèixer emergències i actuar amb seguretat."
                 }
             ]
         },
@@ -415,22 +415,22 @@ const allTranslations = {
             "MEMBERS": [
                 {
                     "NAME": "Xavier",
-                    "ROLE": "Enfermero e Instructor ERC",
+                    "ROLE": "Enfermero del SEM e instructor de SVB",
                     "IMAGE_URL": "assets/images/Xavi.jpg",
-                    "DESCRIPTION": "Enfermero e instructor ERC, con experiencia en urgencias hospitalarias y emergencias extrahospitalarias. Imparte formación práctica basada en protocolos actualizados y situaciones reales."
+                    "DESCRIPTION": "Enfermero del Sistema d’Emergències Mèdiques (SEM) e instructor de Soporte Vital Básico (SVB). Imparte formación práctica basada en situaciones reales de emergencia."
                 },
                 {
                     "NAME": "Marc",
-                    "ROLE": "Enfermero e Instructor ERC",
+                    "ROLE": "Enfermero de Urgencias y UCI · Instructor de SVB y SVA",
                     "IMAGE_URL": "assets/images/Marc.jpg",
-                    "DESCRIPTION": "Enfermero e instructor ERC con experiencia en paciente crítico y servicios de urgencias. Combina conocimiento clínico y metodología docente para ofrecer una formación clara, estructurada y aplicable."
+                    "DESCRIPTION": "Enfermero de Urgencias y de la Unidad de Cuidados Intensivos (UCI), e instructor de Soporte Vital Básico (SVB) y Soporte Vital Avanzado (SVA). Combina la experiencia clínica con una formación clara, práctica y aplicable."
                 }
                 ,
                 {
                     "NAME": "Albert",
-                    "ROLE": "Enfermero e Instructor ERC",
+                    "ROLE": "Enfermero de Urgencias e instructor de SVB",
                     "IMAGE_URL": "assets/images/Albert.jpg",
-                    "DESCRIPTION": "Enfermero e instructor ERC con experiencia en urgencias hospitalarias. Aporta un enfoque técnico y orientado a la toma de decisiones en la atención inicial a las emergencias."
+                    "DESCRIPTION": "Enfermero de Urgencias e instructor de Soporte Vital Básico (SVB). Aporta un enfoque práctico para reconocer emergencias y actuar con seguridad."
                 }
             ]
         },
