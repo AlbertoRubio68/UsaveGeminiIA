@@ -228,7 +228,7 @@ const allTranslations = {
             "MARINA_DESCRIPTION": "Aprèn a actuar amb pràctiques de RCP, ús del DEA i simulacions. Adreçat a persones sense formació sanitària.",
             "MARINA_PRICE": "79 € per persona · Segona persona: 60 €",
             "MARINA_PAIR": "Veniu acompanyats: 139 € en total per a dues persones.",
-            "MARINA_CTA": "Demanar informació i inscripció",
+            "MARINA_CTA": "Inscriure’m al curs",
             "NEXT_DATES": "Consulta les properes convocatòries o demana un curs per al teu equip.",
             "TITLE": "Calendari de Cursos",
             "SUBTITLE": "Consulta les properes dates i reserva la teva plaça."
@@ -470,7 +470,7 @@ const allTranslations = {
             "MARINA_DESCRIPTION": "Aprende a actuar con prácticas de RCP, uso del DEA y simulaciones. Dirigido a personas sin formación sanitaria.",
             "MARINA_PRICE": "79 € por persona · Segunda persona: 60 €",
             "MARINA_PAIR": "Ven acompañado: 139 € en total para dos personas.",
-            "MARINA_CTA": "Pedir información e inscripción",
+            "MARINA_CTA": "Inscribirme al curso",
             "NEXT_DATES": "Consulta las próximas convocatorias o solicita un curso para tu equipo.",
             "TITLE": "Calendario de Cursos",
             "SUBTITLE": "Consulta las próximas fechas y reserva tu plaza."
