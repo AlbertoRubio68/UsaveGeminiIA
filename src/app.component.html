@@ -4,9 +4,12 @@
   <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm shadow-md transition-all duration-300">
     <div class="container mx-auto px-6 py-4 flex justify-between items-center">
       <!-- Logo -->
-      <a (click)="navigateToHomeAndScroll('home')" class="cursor-pointer flex items-center gap-2">
-        <img [src]="logoUrl" alt="uSave Formació Logo" class="w-8 h-8">
-        <span class="text-xl font-bold text-gray-900">{{ t().HEADER.TITLE }}</span>
+      <a [routerLink]="['/']" (click)="navigateToHomeAndScroll('home')" aria-label="uSave Formació" class="cursor-pointer inline-flex shrink-0 items-center gap-3 rounded-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-red-600">
+        <img [src]="logoUrl" alt="" width="132" height="118" class="w-10 sm:w-12 h-auto object-contain shrink-0">
+        <span class="flex flex-col text-blue-950 leading-none">
+          <span class="text-2xl sm:text-3xl font-extrabold tracking-tight">uSave</span>
+          <span class="mt-1 text-xs font-semibold tracking-widest uppercase">Formació</span>
+        </span>
       </a>
 
       <!-- Desktop Navigation -->
