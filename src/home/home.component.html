@@ -109,7 +109,10 @@
             <p class="mt-1">09:00–15:00 h</p>
             <p class="mt-4 text-gray-700">{{ t().CALENDAR.MARINA_DESCRIPTION }}</p>
             <p class="mt-5 text-xl font-bold">{{ t().CALENDAR.MARINA_PRICE }}</p>
-            <a [href]="marinaEmailUrl()" class="mt-6 inline-block bg-red-600 text-white px-7 py-3 rounded-full font-semibold hover:bg-red-700">{{ t().CALENDAR.MARINA_CTA }}</a>
+            <div class="mt-6 flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSe2aXvnn9WHGpv-iE-ASD1ZCi_5h16GhbQdOSQaaWgKHUB9Lg/viewform" target="_blank" rel="noopener noreferrer" class="inline-block bg-red-600 text-white px-7 py-3 rounded-full font-semibold hover:bg-red-700">{{ t().CALENDAR.MARINA_CTA }}</a>
+                <a [href]="marinaEmailUrl()" class="font-semibold text-blue-950 underline">{{ t().CONTACT.EMAIL_BUTTON }}</a>
+            </div>
         </article>
         } @else {
         <p class="mt-6 text-center">{{ t().CALENDAR.NEXT_DATES }}</p>
