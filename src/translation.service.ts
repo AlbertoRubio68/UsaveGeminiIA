@@ -155,7 +155,7 @@ const allTranslations = {
         },
         "TEAM": {
             "TITLE": "El Nostre Equip",
-            "SUBTITLE": "Som dos infermers amb experiència en emergències, apassionats per la formació.",
+            "SUBTITLE": "Som un equip d’infermers amb experiència en emergències, apassionats per la formació.",
             "MEMBERS": [
                 {
                     "NAME": "Xavier",
@@ -223,10 +223,18 @@ const allTranslations = {
             ]
         },
         "CALENDAR": {
+            "MARINA_DATE": "Dissabte 14 de novembre de 2026",
+            "MARINA_TITLE": "Curs oficial de SVB + DEA · ERC",
+            "MARINA_DESCRIPTION": "Aprèn a actuar amb pràctiques de RCP, ús del DEA i simulacions. Adreçat a persones sense formació sanitària.",
+            "MARINA_PRICE": "79 € per persona · Segona persona: 60 €",
+            "MARINA_PAIR": "Veniu acompanyats: 139 € en total per a dues persones.",
+            "MARINA_CTA": "Demanar informació i inscripció",
+            "NEXT_DATES": "Consulta les properes convocatòries o demana un curs per al teu equip.",
             "TITLE": "Calendari de Cursos",
             "SUBTITLE": "Consulta les properes dates i reserva la teva plaça."
         },
         "CONTACT": {
+            "ENGLISH_NOTE": "També oferim cursos en anglès. Consulta disponibilitat.",
             "TITLE": "Contacte i Properes Passes",
             "SUBTITLE": "Si la vostra entitat té interès en oferir formació, estem a la vostra disposició. Contacteu-nos per a una proposta personalitzada.",
             "EMAIL_BUTTON": "Enviar un Email",
@@ -403,7 +411,7 @@ const allTranslations = {
         },
         "TEAM": {
             "TITLE": "Nuestro Equipo",
-            "SUBTITLE": "Somos dos enfermeros con experiencia en emergencias, apasionados por la formación.",
+            "SUBTITLE": "Somos un equipo de enfermeros con experiencia en emergencias, apasionados por la formación.",
             "MEMBERS": [
                 {
                     "NAME": "Xavier",
@@ -457,10 +465,18 @@ const allTranslations = {
             ]
         },
         "CALENDAR": {
+            "MARINA_DATE": "Sábado 14 de noviembre de 2026",
+            "MARINA_TITLE": "Curso oficial de SVB + DEA · ERC",
+            "MARINA_DESCRIPTION": "Aprende a actuar con prácticas de RCP, uso del DEA y simulaciones. Dirigido a personas sin formación sanitaria.",
+            "MARINA_PRICE": "79 € por persona · Segunda persona: 60 €",
+            "MARINA_PAIR": "Ven acompañado: 139 € en total para dos personas.",
+            "MARINA_CTA": "Pedir información e inscripción",
+            "NEXT_DATES": "Consulta las próximas convocatorias o solicita un curso para tu equipo.",
             "TITLE": "Calendario de Cursos",
             "SUBTITLE": "Consulta las próximas fechas y reserva tu plaza."
         },
         "CONTACT": {
+            "ENGLISH_NOTE": "También ofrecemos cursos en inglés. Consulta disponibilidad.",
             "TITLE": "Contacto y Próximos Pasos",
             "SUBTITLE": "Si vuestra entidad tiene interés en ofrecer formación, estamos a vuestra disposición. Contactadnos para una propuesta personalizada.",
             "EMAIL_BUTTON": "Enviar un Email",
