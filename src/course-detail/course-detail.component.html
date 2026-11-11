@@ -48,6 +48,10 @@
           <div>
             <span class="font-bold text-gray-800">{{ courseData.VALIDITY_LABEL }}:</span>
             <span class="text-gray-600 ml-2">{{ courseData.VALIDITY_VALUE }}</span>
+            @if(courseData.id === 'svb-dea') {
+            <a href="https://www.erc.edu/education/for-professionals/course-types/bls"
+              class="block mt-2 text-sm text-blue-950 underline underline-offset-4 hover:text-red-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4">{{ t().FAQ.CERTIFICATE_SOURCE_LABEL }}</a>
+            }
           </div>
           }
 

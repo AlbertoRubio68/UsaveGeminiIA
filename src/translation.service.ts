@@ -176,6 +176,7 @@ const allTranslations = {
 },
         "FAQ": {
             "TITLE": "Preguntes Freqüents (FAQs)",
+            "CERTIFICATE_SOURCE_LABEL": "Font oficial: ERC — curs BLS",
             "SUBTITLE": "Resolent els teus dubtes més comuns.",
             "QUESTIONS": [
                 {
@@ -400,6 +401,7 @@ const allTranslations = {
         },
         "FAQ": {
             "TITLE": "Preguntas Frecuentes (FAQs)",
+            "CERTIFICATE_SOURCE_LABEL": "Fuente oficial: ERC — curso BLS",
             "SUBTITLE": "Resolviendo tus dudas más comunes.",
             "QUESTIONS": [
                 {
