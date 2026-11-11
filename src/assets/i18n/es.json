@@ -34,7 +34,7 @@
             "DURATION_LABEL": "Duración",
             "DURATION_VALUE": "6 horas presenciales",
             "VALIDITY_LABEL": "Validez",
-            "VALIDITY_VALUE": "2 años"
+            "VALIDITY_VALUE": "3 años (certificado ERC)"
         },
         "OTHERS": {
             "RECYCLING": {
@@ -61,7 +61,7 @@
         "QUESTIONS": [
             {
                 "question": "¿Qué validez tiene el certificado?",
-                "answer": "El certificado de Soporte Vital Básico y uso del DEA tiene una validez de 2 años, según las directrices del Consejo Europeo de Resucitación (ERC)."
+                "answer": "El certificado de proveedor de Soporte Vital Básico y uso del DEA del European Resuscitation Council (ERC) tiene una validez de 3 años. Es necesario mantener los conocimientos y las habilidades actualizados y completar la recertificación dentro de este periodo."
             },
             {
                 "question": "¿Qué titulaciones tienen los instructores?",

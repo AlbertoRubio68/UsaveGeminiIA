@@ -72,7 +72,7 @@ const allTranslations = {
                     "DURATION_VALUE": "6 hores presencials",
                     "VALIDITY_LABEL": "Validesa",
 
-                    "VALIDITY_VALUE": "2 anys",
+                    "VALIDITY_VALUE": "3 anys (certificat ERC)",
                     "PRICE_LABEL": "Preu",
                     "PRICE": "79€ / persona"
                 }, {
@@ -180,7 +180,7 @@ const allTranslations = {
             "QUESTIONS": [
                 {
                     "question": "Quina validesa té el certificat?",
-                    "answer": "El certificat de Suport Vital Bàsic i ús del DEA té una validesa de 2 anys, segons les directrius del Consell Europeu de Ressuscitació (ERC)."
+                    "answer": "El certificat de proveïdor de Suport Vital Bàsic i ús del DEA de l’European Resuscitation Council (ERC) té una validesa de 3 anys. Cal mantenir els coneixements i les habilitats actualitzats i completar la recertificació dins d’aquest període."
                 },
                 {
                     "question": "Quines titulacions tenen els instructors?",
@@ -296,7 +296,7 @@ const allTranslations = {
                     "DURATION": "6 horas",
                     "DURATION_VALUE": "6 horas presenciales",
                     "VALIDITY_LABEL": "Validez",
-                    "VALIDITY_VALUE": "2 años",
+                    "VALIDITY_VALUE": "3 años (certificado ERC)",
                     "PRICE_LABEL": "Precio",
                     "PRICE": "79€ / persona"
                 },
@@ -404,7 +404,7 @@ const allTranslations = {
             "QUESTIONS": [
                 {
                     "question": "¿Qué validez tiene el certificado?",
-                    "answer": "El certificado de Soporte Vital Básico y uso del DEA tiene una validez de 2 años, según las directrices del Consejo Europeo de Resucitación (ERC)."
+                    "answer": "El certificado de proveedor de Soporte Vital Básico y uso del DEA del European Resuscitation Council (ERC) tiene una validez de 3 años. Es necesario mantener los conocimientos y las habilidades actualizados y completar la recertificación dentro de este periodo."
                 },
                 {
                     "question": "¿Qué titulaciones tienen los instructores?",
