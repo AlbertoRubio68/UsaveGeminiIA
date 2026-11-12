@@ -29,6 +29,29 @@ export class HomeComponent {
   });
 
   upcomingCourse = Date.now() < new Date('2026-11-14T09:00:00+01:00').getTime();
+  januaryCourse = Date.now() < new Date('2027-01-16T09:00:00+01:00').getTime();
+  januaryRegistrationUrl = 'https://docs.google.com/forms/d/e/1FAIpQLScpnwdbh6gn4ux6JBE0TomsU8_0BIO7lgzfO-ehPa6ZNfeoUw/viewform';
+  januaryCourseText = computed(() => this.translationService.language() === 'ca' ? {
+    date: 'Dissabte 16 de gener de 2027',
+    title: 'Curs oficial de SVB i DEA · ERC',
+    location: 'El Prat de Llobregat',
+    venue: 'Adreça de l’aula pendent de confirmar. La comunicarem per correu abans de demanar el pagament.',
+    description: 'Aprèn a reconèixer una emergència i practica RCP, l’ús del DEA d’entrenament i les maniobres davant un ennuegament. Certificat ERC en completar i superar el programa; validesa de 3 anys.',
+    price: '79 € per persona',
+    payment: 'Reserva de 20 € · Resta de 59 € abans del curs',
+    cta: 'Inscriu-t’hi',
+    note: 'Envia la sol·licitud amb les dades per a CoSy. Et confirmarem la plaça per correu després de validar la inscripció i rebre la reserva. El formulari no fa cap cobrament automàtic.'
+  } : {
+    date: 'Sábado 16 de enero de 2027',
+    title: 'Curso oficial de SVB y DEA · ERC',
+    location: 'El Prat de Llobregat',
+    venue: 'Dirección del aula pendiente de confirmar. La comunicaremos por correo antes de solicitar el pago.',
+    description: 'Aprende a reconocer una emergencia y practica RCP, el uso del DEA de entrenamiento y las maniobras ante un atragantamiento. Certificado ERC al completar y superar el programa; validez de 3 años.',
+    price: '79 € por persona',
+    payment: 'Reserva de 20 € · Resto de 59 € antes del curso',
+    cta: 'Inscribirme',
+    note: 'Envía la solicitud con los datos para CoSy. Te confirmaremos la plaza por correo tras validar la inscripción y recibir la reserva. El formulario no realiza ningún cobro automático.'
+  });
   marinaEmailUrl = computed(() => {
     const ca = this.translationService.language() === 'ca';
     const subject = 'MARINA - SVB + DEA - 14/11/2026';
