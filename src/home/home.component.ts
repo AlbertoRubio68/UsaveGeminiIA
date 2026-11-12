@@ -34,8 +34,8 @@ export class HomeComponent {
   januaryCourseText = computed(() => this.translationService.language() === 'ca' ? {
     date: 'Dissabte 16 de gener de 2027',
     title: 'Curs oficial de SVB i DEA · ERC',
-    location: 'El Prat de Llobregat',
-    venue: 'Adreça de l’aula pendent de confirmar. La comunicarem per correu abans de demanar el pagament.',
+    location: 'Centre Mèdic Marina · El Prat de Llobregat',
+    venue: 'Av. de Josep Anselm Clavé, 5-7 · 08820 El Prat de Llobregat.',
     description: 'Aprèn a reconèixer una emergència i practica RCP, l’ús del DEA d’entrenament i les maniobres davant un ennuegament. Certificat ERC en completar i superar el programa; validesa de 3 anys.',
     price: '79 € per persona',
     payment: 'Reserva de 20 € · Resta de 59 € abans del curs',
@@ -44,8 +44,8 @@ export class HomeComponent {
   } : {
     date: 'Sábado 16 de enero de 2027',
     title: 'Curso oficial de SVB y DEA · ERC',
-    location: 'El Prat de Llobregat',
-    venue: 'Dirección del aula pendiente de confirmar. La comunicaremos por correo antes de solicitar el pago.',
+    location: 'Centre Mèdic Marina · El Prat de Llobregat',
+    venue: 'Av. de Josep Anselm Clavé, 5-7 · 08820 El Prat de Llobregat.',
     description: 'Aprende a reconocer una emergencia y practica RCP, el uso del DEA de entrenamiento y las maniobras ante un atragantamiento. Certificado ERC al completar y superar el programa; validez de 3 años.',
     price: '79 € por persona',
     payment: 'Reserva de 20 € · Resto de 59 € antes del curso',
