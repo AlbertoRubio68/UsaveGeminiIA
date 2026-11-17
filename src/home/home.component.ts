@@ -28,7 +28,6 @@ export class HomeComponent {
     return `mailto:formacio.usave@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   });
 
-  upcomingCourse = Date.now() < new Date('2026-11-14T09:00:00+01:00').getTime();
   januaryCourse = Date.now() < new Date('2027-01-16T09:00:00+01:00').getTime();
   januaryRegistrationUrl = 'https://docs.google.com/forms/d/e/1FAIpQLScpnwdbh6gn4ux6JBE0TomsU8_0BIO7lgzfO-ehPa6ZNfeoUw/viewform';
   januaryCourseText = computed(() => this.translationService.language() === 'ca' ? {
@@ -52,15 +51,6 @@ export class HomeComponent {
     cta: 'Inscribirme',
     note: 'Envía la solicitud con los datos para CoSy. Te confirmaremos la plaza por correo tras validar la inscripción y recibir la reserva. El formulario no realiza ningún cobro automático.'
   });
-  marinaEmailUrl = computed(() => {
-    const ca = this.translationService.language() === 'ca';
-    const subject = 'MARINA - SVB + DEA - 14/11/2026';
-    const body = ca
-      ? 'Bon dia, voldria informació per inscriure’m al curs del Centre Mèdic Marina del 14 de novembre.\n\nNom:\nNombre de persones:\nTelèfon de contacte:'
-      : 'Hola, me gustaría recibir información para inscribirme en el curso del Centre Mèdic Marina del 14 de noviembre.\n\nNombre:\nNúmero de personas:\nTeléfono de contacto:';
-    return 'mailto:formacio.usave@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-  });
-
   scrollTo(sectionId: string): void {
     if (typeof document !== 'undefined') {
         const section = document.getElementById(sectionId);
