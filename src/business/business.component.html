@@ -41,7 +41,11 @@
         @if (sent()) {
           <p class="mt-5 font-bold text-green-800" role="status">{{ ca() ? 'Sol·licitud enviada. El servei ha confirmat la recepció per trametre-la a USAVE.' : 'Solicitud enviada. El servicio ha confirmado la recepción para entregarla a USAVE.' }}</p>
         } @else {
-          <button type="button" (click)="send()" [disabled]="sending()" class="mt-5 rounded-full bg-red-600 px-6 py-3 font-bold text-white disabled:opacity-60">{{ sending() ? (ca() ? 'Enviant…' : 'Enviando…') : (ca() ? 'Enviar sol·licitud' : 'Enviar solicitud') }}</button>
+          <label class="mt-4 flex items-start gap-2 text-sm text-blue-950">
+            <input #measureConversion type="checkbox" [disabled]="sending()" class="mt-1">
+            <span>{{ ca() ? 'Opcional: permeto a USAVE utilitzar la tecnologia publicitària de Google per mesurar si la meva sol·licitud prové d’un anunci. Puc enviar-la sense marcar aquesta casella.' : 'Opcional: permito a USAVE usar la tecnología publicitaria de Google para medir si mi solicitud procede de un anuncio. Puedo enviarla sin marcar esta casilla.' }}</span>
+          </label>
+          <button type="button" (click)="send(measureConversion.checked)" [disabled]="sending()" class="mt-5 rounded-full bg-red-600 px-6 py-3 font-bold text-white disabled:opacity-60">{{ sending() ? (ca() ? 'Enviant…' : 'Enviando…') : (ca() ? 'Enviar sol·licitud' : 'Enviar solicitud') }}</button>
         }
         @if (failed()) {
           <p role="alert" class="mt-4 font-semibold text-red-800">{{ ca() ? 'No podem confirmar l’enviament. Conservem el text aquí. Pots contactar amb USAVE per correu o telèfon; evita reenviar-lo si ja has rebut resposta.' : 'No podemos confirmar el envío. Conservamos el texto aquí. Puedes contactar con USAVE por correo o teléfono; evita reenviarlo si ya has recibido respuesta.' }}</p>

@@ -1,6 +1,7 @@
 import { Component, ChangeDetectionStrategy, computed, inject, signal } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { TranslationService } from '../translation.service';
+import { recordAdsConversion } from './ads-conversion';
 import { BusinessRequest, campaignSource, requestEmail } from './request';
 
 @Component({
@@ -42,7 +43,7 @@ export class BusinessComponent {
     document.getElementById('request-review')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
 
-  async send() {
+  async send(measureConversion = false) {
     if (this.sending() || this.sent()) return;
     this.sending.set(true);
     this.failed.set(false);
@@ -64,6 +65,9 @@ export class BusinessComponent {
       const result = await response.json();
       if (!response.ok || (result.success !== true && result.success !== 'true')) throw new Error('not accepted');
       this.sent.set(true);
+      if (measureConversion && !this.honeypot()) {
+        try { recordAdsConversion(); } catch { /* Measurement cannot change the form result. */ }
+      }
     } catch {
       this.failed.set(true);
     } finally {
