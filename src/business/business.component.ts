@@ -1,6 +1,7 @@
 import { Component, ChangeDetectionStrategy, computed, inject, signal } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { TranslationService } from '../translation.service';
+import { web3FormsAccessKey } from './web3forms-config';
 import { recordAdsConversion } from './ads-conversion';
 import { BusinessRequest, campaignSource, requestEmail } from './request';
 
@@ -51,20 +52,20 @@ export class BusinessComponent {
     // The provider can accept and forward a form before the browser receives its acknowledgement.
     const timeout = setTimeout(() => controller.abort(), 60000);
     try {
-      const response = await fetch('https://formsubmit.co/ajax/846bfe1258d3fbb945812f3fc39dad0c', {
+      const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({
+          access_key: web3FormsAccessKey,
           email: this.replyTo(),
           message: this.emailBody(),
-          _honey: this.honeypot(),
-          _subject: 'USAVE · Solicitud de formación para equipos',
-          _template: 'table',
+          botcheck: this.honeypot(),
+          subject: 'USAVE · Solicitud de formación para equipos',
         }),
         signal: controller.signal,
       });
       const result = await response.json();
-      if (!response.ok || (result.success !== true && result.success !== 'true')) throw new Error('not accepted');
+      if (!response.ok || result.success !== true) throw new Error('not accepted');
       this.sent.set(true);
       if (measureConversion && !this.honeypot()) {
         try { recordAdsConversion(); } catch { /* Measurement cannot change the form result. */ }
