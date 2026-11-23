@@ -48,7 +48,8 @@ export class BusinessComponent {
     this.sending.set(true);
     this.failed.set(false);
     const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 20000);
+    // The provider can accept and forward a form before the browser receives its acknowledgement.
+    const timeout = setTimeout(() => controller.abort(), 60000);
     try {
       const response = await fetch('https://formsubmit.co/ajax/846bfe1258d3fbb945812f3fc39dad0c', {
         method: 'POST',
